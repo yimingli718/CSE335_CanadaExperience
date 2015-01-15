@@ -1,0 +1,159 @@
+\hypertarget{class_c_snowflake}{\section{C\+Snowflake Class Reference}
+\label{class_c_snowflake}\index{C\+Snowflake@{C\+Snowflake}}
+}
+
+
+The snow flake class to implement snow.  
+
+
+
+
+{\ttfamily \#include $<$Snowflake.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_snowflake_a839815275ab5ca42c8545e39a04b2f75}{\hyperlink{class_c_snowflake_a839815275ab5ca42c8545e39a04b2f75}{C\+Snowflake} ()}\label{class_c_snowflake_a839815275ab5ca42c8545e39a04b2f75}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_snowflake_a0e8738c0d7fc9c2ab354e93532f62df2}{\hyperlink{class_c_snowflake_a0e8738c0d7fc9c2ab354e93532f62df2}{$\sim$\+C\+Snowflake} ()}\label{class_c_snowflake_a0e8738c0d7fc9c2ab354e93532f62df2}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_snowflake_a1002ccff7dc55143e7e9879f7f6ab8fb}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Solid\+Brush $\ast$brush)
+\begin{DoxyCompactList}\small\item\em The function to draw the snow flakes. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_snowflake_a4ff5173791cdab56885c9ae1dced9d05}{Update} (double elapsed)
+\begin{DoxyCompactList}\small\item\em The update function to redraw the snowflake. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ \hyperlink{class_c_snowflake_ae228ed6b4121315e019efc5ff7acd2e8}{Get\+Next} ()
+\begin{DoxyCompactList}\small\item\em The getter function to get the pointer next. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_snowflake_a5a763ea12e70d4e4fb82571636f761ef}{Set\+Next} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ n)
+\begin{DoxyCompactList}\small\item\em setter function to set the pointer next \end{DoxyCompactList}\item 
+void \hyperlink{class_c_snowflake_a4a5c3acf9fe94454a3409ace089356ea}{Set\+Position} (double x, double y)
+\begin{DoxyCompactList}\small\item\em setter function to set the position \end{DoxyCompactList}\item 
+int \hyperlink{class_c_snowflake_a785bd07f9b7341606e94204e6be7af67}{Get\+Position\+X} ()
+\begin{DoxyCompactList}\small\item\em The getter function to get the x position. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_snowflake_a047611d7e82786fec3d329f4579ef823}{Get\+Position\+Y} ()
+\begin{DoxyCompactList}\small\item\em The getter function to get the y position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The snow flake class to implement snow. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_snowflake_a1002ccff7dc55143e7e9879f7f6ab8fb}{\index{C\+Snowflake@{C\+Snowflake}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Snowflake\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics, }
+\item[{Gdiplus\+::\+Solid\+Brush $\ast$}]{brush}
+\end{DoxyParamCaption}
+)}}\label{class_c_snowflake_a1002ccff7dc55143e7e9879f7f6ab8fb}
+
+
+The function to draw the snow flakes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The device context to draw on \\
+\hline
+{\em brush} & The corlor brush to dawn with \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_snowflake_ae228ed6b4121315e019efc5ff7acd2e8}{\index{C\+Snowflake@{C\+Snowflake}!Get\+Next@{Get\+Next}}
+\index{Get\+Next@{Get\+Next}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Get\+Next}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Snowflake}$>$ C\+Snowflake\+::\+Get\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_snowflake_ae228ed6b4121315e019efc5ff7acd2e8}
+
+
+The getter function to get the pointer next. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to next 
+\end{DoxyReturn}
+\hypertarget{class_c_snowflake_a785bd07f9b7341606e94204e6be7af67}{\index{C\+Snowflake@{C\+Snowflake}!Get\+Position\+X@{Get\+Position\+X}}
+\index{Get\+Position\+X@{Get\+Position\+X}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Get\+Position\+X}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Snowflake\+::\+Get\+Position\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_snowflake_a785bd07f9b7341606e94204e6be7af67}
+
+
+The getter function to get the x position. 
+
+\begin{DoxyReturn}{Returns}
+the x position 
+\end{DoxyReturn}
+\hypertarget{class_c_snowflake_a047611d7e82786fec3d329f4579ef823}{\index{C\+Snowflake@{C\+Snowflake}!Get\+Position\+Y@{Get\+Position\+Y}}
+\index{Get\+Position\+Y@{Get\+Position\+Y}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Get\+Position\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Snowflake\+::\+Get\+Position\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_snowflake_a047611d7e82786fec3d329f4579ef823}
+
+
+The getter function to get the y position. 
+
+\begin{DoxyReturn}{Returns}
+the y position 
+\end{DoxyReturn}
+\hypertarget{class_c_snowflake_a5a763ea12e70d4e4fb82571636f761ef}{\index{C\+Snowflake@{C\+Snowflake}!Set\+Next@{Set\+Next}}
+\index{Set\+Next@{Set\+Next}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Set\+Next}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Snowflake\+::\+Set\+Next (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf C\+Snowflake} $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_snowflake_a5a763ea12e70d4e4fb82571636f761ef}
+
+
+setter function to set the pointer next 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & pointer to next \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_snowflake_a4a5c3acf9fe94454a3409ace089356ea}{\index{C\+Snowflake@{C\+Snowflake}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Set\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Snowflake\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_snowflake_a4a5c3acf9fe94454a3409ace089356ea}
+
+
+setter function to set the position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,x} & coordinate; \\
+\hline
+{\em y,y} & coordinate \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_snowflake_a4ff5173791cdab56885c9ae1dced9d05}{\index{C\+Snowflake@{C\+Snowflake}!Update@{Update}}
+\index{Update@{Update}!C\+Snowflake@{C\+Snowflake}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Snowflake\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{double}]{elapsed}
+\end{DoxyParamCaption}
+)}}\label{class_c_snowflake_a4ff5173791cdab56885c9ae1dced9d05}
+
+
+The update function to redraw the snowflake. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & the time between each update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_snowflake_8h}{Snowflake.\+h}\item 
+\hyperlink{_snowflake_8cpp}{Snowflake.\+cpp}\end{DoxyCompactItemize}

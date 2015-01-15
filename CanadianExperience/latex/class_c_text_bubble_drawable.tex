@@ -1,0 +1,252 @@
+\hypertarget{class_c_text_bubble_drawable}{\section{C\+Text\+Bubble\+Drawable Class Reference}
+\label{class_c_text_bubble_drawable}\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+}
+
+
+The text bubble class adpater.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Bubble\+Drawable.\+h$>$}
+
+Inheritance diagram for C\+Text\+Bubble\+Drawable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_text_bubble_drawable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_text_bubble_drawable_a65188df7a034a6a4df50866b504abedb}{C\+Text\+Bubble\+Drawable} (const std\+::wstring \&name)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_aa573f267e94aaf7f15940b30cae40141}{virtual \hyperlink{class_c_text_bubble_drawable_aa573f267e94aaf7f15940b30cae40141}{$\sim$\+C\+Text\+Bubble\+Drawable} ()}\label{class_c_text_bubble_drawable_aa573f267e94aaf7f15940b30cae40141}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_a4e7c9168364e4eb0c8765c2bbde378ef}{\hyperlink{class_c_text_bubble_drawable_a4e7c9168364e4eb0c8765c2bbde378ef}{C\+Text\+Bubble\+Drawable} ()=delete}\label{class_c_text_bubble_drawable_a4e7c9168364e4eb0c8765c2bbde378ef}
+
+\begin{DoxyCompactList}\small\item\em Default constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_a93a6ab5582897e65fafa41c8f9b8643c}{\hyperlink{class_c_text_bubble_drawable_a93a6ab5582897e65fafa41c8f9b8643c}{C\+Text\+Bubble\+Drawable} (const \hyperlink{class_c_text_bubble_drawable}{C\+Text\+Bubble\+Drawable} \&)=delete}\label{class_c_text_bubble_drawable_a93a6ab5582897e65fafa41c8f9b8643c}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_aa1895ac0e75e9783e17634fc2d04447f}{void \hyperlink{class_c_text_bubble_drawable_aa1895ac0e75e9783e17634fc2d04447f}{operator=} (const \hyperlink{class_c_text_bubble_drawable}{C\+Text\+Bubble\+Drawable} \&)=delete}\label{class_c_text_bubble_drawable_aa1895ac0e75e9783e17634fc2d04447f}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_text_bubble_drawable_ab06c08f5357aabd1275610baac806b59}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\begin{DoxyCompactList}\small\item\em The Draw function to draw the text bubble. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_c_text_bubble_drawable_a85dd41fa9b6ce12989f529907030fd9a}{Hit\+Test} (Gdiplus\+::\+Point pos) override
+\begin{DoxyCompactList}\small\item\em The Hittest function to check if the click is in the text bubble. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_aa12d719c3c6e7d76edc3d0afdb5e9485}{virtual bool \hyperlink{class_c_text_bubble_drawable_aa12d719c3c6e7d76edc3d0afdb5e9485}{Is\+Movable} ()}\label{class_c_text_bubble_drawable_aa12d719c3c6e7d76edc3d0afdb5e9485}
+
+\begin{DoxyCompactList}\small\item\em Check if the text bubble can be moved. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_c_text_bubble_drawable_a0ad09643af72c6fcd0182f38e8ce18da}{Is\+Text\+Bubble\+Drawable} () override
+\begin{DoxyCompactList}\small\item\em Check the drawable is Text\+Bubble\+Drawable. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_a61d871237611c8fc4f01f29bdee9dc58}{std\+::wstring \hyperlink{class_c_text_bubble_drawable_a61d871237611c8fc4f01f29bdee9dc58}{Get\+Text} ()}\label{class_c_text_bubble_drawable_a61d871237611c8fc4f01f29bdee9dc58}
+
+\begin{DoxyCompactList}\small\item\em Get the text value from Text bubble class. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_ae1b61142301c7ebb292917fb3988dd24}{bool \hyperlink{class_c_text_bubble_drawable_ae1b61142301c7ebb292917fb3988dd24}{Get\+Mirror} ()}\label{class_c_text_bubble_drawable_ae1b61142301c7ebb292917fb3988dd24}
+
+\begin{DoxyCompactList}\small\item\em Get the mirror value from text bubbleclass. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_text_bubble_drawable_ac7d35d877413dfa7f633646a09e67ffe}{Set\+Text} (const std\+::wstring \&str)
+\begin{DoxyCompactList}\small\item\em Set the text value in the text bubble. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_text_bubble_drawable_acb036cd5239ba203bb7cf55616a32b88}{Set\+Mirror} (const bool \&mirror)
+\begin{DoxyCompactList}\small\item\em Get the mirror value in the text bubble. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_a0df72f52a5df614eccdff89bf12cf905}{virtual C\+Text\+Bubble $\ast$ \hyperlink{class_c_text_bubble_drawable_a0df72f52a5df614eccdff89bf12cf905}{Get\+Text\+Bubble} () override}\label{class_c_text_bubble_drawable_a0df72f52a5df614eccdff89bf12cf905}
+
+\begin{DoxyCompactList}\small\item\em Get the Text bubble this class adpated for. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_text_bubble_drawable_a6e154d1a283f3f0b85eb1f3d1480c21e}{Set\+Actor} (\hyperlink{class_c_actor}{C\+Actor} $\ast$actor)
+\begin{DoxyCompactList}\small\item\em Set the actor. This is where we set the channel name. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_text_bubble_drawable_adbf6b04696680906cc3cb32e7a0918b9}{Set\+Timeline} (\hyperlink{class_c_timeline}{C\+Timeline} $\ast$timeline) override
+\begin{DoxyCompactList}\small\item\em Set the timeline. The tells the channel the timeline. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_a360ce876ba0ccdb24a22bc356597e6d1}{virtual void \hyperlink{class_c_text_bubble_drawable_a360ce876ba0ccdb24a22bc356597e6d1}{Set\+Keyframe} () override}\label{class_c_text_bubble_drawable_a360ce876ba0ccdb24a22bc356597e6d1}
+
+\begin{DoxyCompactList}\small\item\em Set the keyframe based on the current status. \end{DoxyCompactList}\item 
+\hypertarget{class_c_text_bubble_drawable_ab6978a6de5ce63512f215d42f9f6e388}{virtual void \hyperlink{class_c_text_bubble_drawable_ab6978a6de5ce63512f215d42f9f6e388}{Get\+Keyframe} () override}\label{class_c_text_bubble_drawable_ab6978a6de5ce63512f215d42f9f6e388}
+
+\begin{DoxyCompactList}\small\item\em Get the current channel from the animation system. \end{DoxyCompactList}\item 
+\hyperlink{class_c_anim_channel_text}{C\+Anim\+Channel\+Text} $\ast$ \hyperlink{class_c_text_bubble_drawable_a62179412aeb297e04f996c69b3887e38}{Get\+Text\+Channel} ()
+\begin{DoxyCompactList}\small\item\em The position animation channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The text bubble class adpater. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_text_bubble_drawable_a65188df7a034a6a4df50866b504abedb}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{C\+Text\+Bubble\+Drawable}]{\setlength{\rightskip}{0pt plus 5cm}C\+Text\+Bubble\+Drawable\+::\+C\+Text\+Bubble\+Drawable (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_bubble_drawable_a65188df7a034a6a4df50866b504abedb}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & of the bubble \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_text_bubble_drawable_ab06c08f5357aabd1275610baac806b59}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Text\+Bubble\+Drawable\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_text_bubble_drawable_ab06c08f5357aabd1275610baac806b59}
+
+
+The Draw function to draw the text bubble. 
+
+The draw function to draw the text bubble.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_drawable_a9b6a9920a75d88d9ae321997495eaec7}{C\+Drawable}.
+
+\hypertarget{class_c_text_bubble_drawable_a62179412aeb297e04f996c69b3887e38}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Get\+Text\+Channel@{Get\+Text\+Channel}}
+\index{Get\+Text\+Channel@{Get\+Text\+Channel}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Get\+Text\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Anim\+Channel\+Text}$\ast$ C\+Text\+Bubble\+Drawable\+::\+Get\+Text\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_text_bubble_drawable_a62179412aeb297e04f996c69b3887e38}
+
+
+The position animation channel. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to animation channel 
+\end{DoxyReturn}
+\hypertarget{class_c_text_bubble_drawable_a85dd41fa9b6ce12989f529907030fd9a}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Hit\+Test@{Hit\+Test}}
+\index{Hit\+Test@{Hit\+Test}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Hit\+Test}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Text\+Bubble\+Drawable\+::\+Hit\+Test (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_text_bubble_drawable_a85dd41fa9b6ce12989f529907030fd9a}
+
+
+The Hittest function to check if the click is in the text bubble. 
+
+The Histest function to check if the click is inside the text bubble.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The click function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the bool value true or not 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_drawable_a43490aec87b1209bbf7441e3855f0874}{C\+Drawable}.
+
+\hypertarget{class_c_text_bubble_drawable_a0ad09643af72c6fcd0182f38e8ce18da}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Is\+Text\+Bubble\+Drawable@{Is\+Text\+Bubble\+Drawable}}
+\index{Is\+Text\+Bubble\+Drawable@{Is\+Text\+Bubble\+Drawable}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Is\+Text\+Bubble\+Drawable}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\+Text\+Bubble\+Drawable\+::\+Is\+Text\+Bubble\+Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_text_bubble_drawable_a0ad09643af72c6fcd0182f38e8ce18da}
+
+
+Check the drawable is Text\+Bubble\+Drawable. 
+
+\begin{DoxyReturn}{Returns}
+a bool value 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a43bc0016ffe1bfe22f5b97730c431514}{C\+Drawable}.
+
+\hypertarget{class_c_text_bubble_drawable_a6e154d1a283f3f0b85eb1f3d1480c21e}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Set\+Actor@{Set\+Actor}}
+\index{Set\+Actor@{Set\+Actor}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Set\+Actor}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Text\+Bubble\+Drawable\+::\+Set\+Actor (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Actor} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_text_bubble_drawable_a6e154d1a283f3f0b85eb1f3d1480c21e}
+
+
+Set the actor. This is where we set the channel name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor} & Actor to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a86762c6e220d9f502c6ccf9baf1135ac}{C\+Drawable}.
+
+\hypertarget{class_c_text_bubble_drawable_acb036cd5239ba203bb7cf55616a32b88}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Set\+Mirror@{Set\+Mirror}}
+\index{Set\+Mirror@{Set\+Mirror}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Set\+Mirror}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Text\+Bubble\+Drawable\+::\+Set\+Mirror (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{mirror}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_bubble_drawable_acb036cd5239ba203bb7cf55616a32b88}
+
+
+Get the mirror value in the text bubble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mirror} & if the the text bubble is mirrored or not \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_text_bubble_drawable_ac7d35d877413dfa7f633646a09e67ffe}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Set\+Text@{Set\+Text}}
+\index{Set\+Text@{Set\+Text}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Set\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Text\+Bubble\+Drawable\+::\+Set\+Text (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_bubble_drawable_ac7d35d877413dfa7f633646a09e67ffe}
+
+
+Set the text value in the text bubble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the text value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_text_bubble_drawable_adbf6b04696680906cc3cb32e7a0918b9}{\index{C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}!Set\+Timeline@{Set\+Timeline}}
+\index{Set\+Timeline@{Set\+Timeline}!C\+Text\+Bubble\+Drawable@{C\+Text\+Bubble\+Drawable}}
+\subsubsection[{Set\+Timeline}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Text\+Bubble\+Drawable\+::\+Set\+Timeline (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Timeline} $\ast$}]{timeline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_text_bubble_drawable_adbf6b04696680906cc3cb32e7a0918b9}
+
+
+Set the timeline. The tells the channel the timeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeline} & Timeline to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a479df46ae298bf716d96b05b1ba6e529}{C\+Drawable}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_text_bubble_drawable_8h}{Text\+Bubble\+Drawable.\+h}\item 
+\hyperlink{_text_bubble_drawable_8cpp}{Text\+Bubble\+Drawable.\+cpp}\end{DoxyCompactItemize}

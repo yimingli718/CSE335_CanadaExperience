@@ -1,0 +1,162 @@
+\hypertarget{class_c_knife}{\section{C\+Knife Class Reference}
+\label{class_c_knife}\index{C\+Knife@{C\+Knife}}
+}
+
+
+Implemnet the knife for sparty.  
+
+
+
+
+{\ttfamily \#include $<$Knife.\+h$>$}
+
+Inheritance diagram for C\+Knife\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_knife}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_knife_a8f2311e0e0ecd4f79d1ed17d5aef14ae}{C\+Knife} (const std\+::wstring \&name, const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Constructor for a knife object. \end{DoxyCompactList}\item 
+\hypertarget{class_c_knife_a2d105884d8d86c62b3014649810d68a5}{\hyperlink{class_c_knife_a2d105884d8d86c62b3014649810d68a5}{C\+Knife} ()=delete}\label{class_c_knife_a2d105884d8d86c62b3014649810d68a5}
+
+\begin{DoxyCompactList}\small\item\em Default constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_knife_acba8b4484d6adc9965a9d3fdf84e24a1}{\hyperlink{class_c_knife_acba8b4484d6adc9965a9d3fdf84e24a1}{C\+Knife} (const \hyperlink{class_c_knife}{C\+Knife} \&)=delete}\label{class_c_knife_acba8b4484d6adc9965a9d3fdf84e24a1}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_knife_a0ce92d419fa5e95a7ff16a956f5e4971}{void \hyperlink{class_c_knife_a0ce92d419fa5e95a7ff16a956f5e4971}{operator=} (const \hyperlink{class_c_knife}{C\+Knife} \&)=delete}\label{class_c_knife_a0ce92d419fa5e95a7ff16a956f5e4971}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_knife_aee287cdbd992f49dbcfca75f6ed7cb0c}{\hyperlink{class_c_knife_aee287cdbd992f49dbcfca75f6ed7cb0c}{$\sim$\+C\+Knife} ()}\label{class_c_knife_aee287cdbd992f49dbcfca75f6ed7cb0c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_c_knife_a838e9409d22b1cc04d584abc611b65e6}{Is\+Movable} ()
+\begin{DoxyCompactList}\small\item\em Is this drawable moveable? \end{DoxyCompactList}\item 
+void \hyperlink{class_c_knife_a71b0ee76740242e1e04f1f1500422ca3}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Draw the head. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_knife_a1586c8502c39cd3032785d946a1f3f73}{Set\+Actor} (\hyperlink{class_c_actor}{C\+Actor} $\ast$actor) override
+\begin{DoxyCompactList}\small\item\em Set the actor. This is where we set the channel name. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_knife_a74c7de63a301d48c10b9dd0ad2c45735}{Set\+Timeline} (\hyperlink{class_c_timeline}{C\+Timeline} $\ast$timeline) override
+\begin{DoxyCompactList}\small\item\em Set the timeline. The tells the channel the timeline. \end{DoxyCompactList}\item 
+\hypertarget{class_c_knife_ab2631848d790223266fb0ea6b8540d34}{virtual void \hyperlink{class_c_knife_ab2631848d790223266fb0ea6b8540d34}{Set\+Keyframe} () override}\label{class_c_knife_ab2631848d790223266fb0ea6b8540d34}
+
+\begin{DoxyCompactList}\small\item\em Set the keyframe based on the current status. \end{DoxyCompactList}\item 
+\hypertarget{class_c_knife_ae68af382999c5ed27feae4e210a2ff2f}{virtual void \hyperlink{class_c_knife_ae68af382999c5ed27feae4e210a2ff2f}{Get\+Keyframe} () override}\label{class_c_knife_ae68af382999c5ed27feae4e210a2ff2f}
+
+\begin{DoxyCompactList}\small\item\em Get the current channel from the animation system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implemnet the knife for sparty. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_knife_a8f2311e0e0ecd4f79d1ed17d5aef14ae}{\index{C\+Knife@{C\+Knife}!C\+Knife@{C\+Knife}}
+\index{C\+Knife@{C\+Knife}!C\+Knife@{C\+Knife}}
+\subsubsection[{C\+Knife}]{\setlength{\rightskip}{0pt plus 5cm}C\+Knife\+::\+C\+Knife (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_c_knife_a8f2311e0e0ecd4f79d1ed17d5aef14ae}
+
+
+Constructor for a knife object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The drawable name to use \\
+\hline
+{\em filename} & The filename for the image to use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_knife_a71b0ee76740242e1e04f1f1500422ca3}{\index{C\+Knife@{C\+Knife}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Knife@{C\+Knife}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Knife\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_knife_a71b0ee76740242e1e04f1f1500422ca3}
+
+
+Draw the head. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics context to draw on \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_image_drawable_ada4d5d342230fbecb7169e4f3324ee52}{C\+Image\+Drawable}.
+
+\hypertarget{class_c_knife_a838e9409d22b1cc04d584abc611b65e6}{\index{C\+Knife@{C\+Knife}!Is\+Movable@{Is\+Movable}}
+\index{Is\+Movable@{Is\+Movable}!C\+Knife@{C\+Knife}}
+\subsubsection[{Is\+Movable}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\+Knife\+::\+Is\+Movable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_knife_a838e9409d22b1cc04d584abc611b65e6}
+
+
+Is this drawable moveable? 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_drawable_ac9f03cfc58aed75fb52cd69c71e7b6e0}{C\+Drawable}.
+
+\hypertarget{class_c_knife_a1586c8502c39cd3032785d946a1f3f73}{\index{C\+Knife@{C\+Knife}!Set\+Actor@{Set\+Actor}}
+\index{Set\+Actor@{Set\+Actor}!C\+Knife@{C\+Knife}}
+\subsubsection[{Set\+Actor}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Knife\+::\+Set\+Actor (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Actor} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_knife_a1586c8502c39cd3032785d946a1f3f73}
+
+
+Set the actor. This is where we set the channel name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor} & Actor to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a86762c6e220d9f502c6ccf9baf1135ac}{C\+Drawable}.
+
+\hypertarget{class_c_knife_a74c7de63a301d48c10b9dd0ad2c45735}{\index{C\+Knife@{C\+Knife}!Set\+Timeline@{Set\+Timeline}}
+\index{Set\+Timeline@{Set\+Timeline}!C\+Knife@{C\+Knife}}
+\subsubsection[{Set\+Timeline}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Knife\+::\+Set\+Timeline (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Timeline} $\ast$}]{timeline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_knife_a74c7de63a301d48c10b9dd0ad2c45735}
+
+
+Set the timeline. The tells the channel the timeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeline} & Timeline to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a479df46ae298bf716d96b05b1ba6e529}{C\+Drawable}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_knife_8h}{Knife.\+h}\item 
+\hyperlink{_knife_8cpp}{Knife.\+cpp}\end{DoxyCompactItemize}

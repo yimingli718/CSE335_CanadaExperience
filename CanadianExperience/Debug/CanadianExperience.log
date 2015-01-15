@@ -1,0 +1,87 @@
+﻿Build started 1/14/2015 11:13:41 PM.
+     1>Project "C:\Users\Eming\Desktop\zip\submit\CanadianExperience\CanadianExperience\CanadianExperience.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Eming\Desktop\zip\submit\CanadianExperience\TextBubbleLib /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\CanadianExperience.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Eming\Desktop\zip\submit\CanadianExperience\TextBubbleLib /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\CanadianExperience.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Actor.cpp ActorFactory.cpp AnimChannel.cpp AnimChannelAngle.cpp AnimChannelPoint.cpp AnimChannelText.cpp CanadianExperience.cpp Drawable.cpp HaroldFactory.cpp HeadTop.cpp ImageDrawable.cpp Knife.cpp LinkedList.cpp MainFrm.cpp ParticleSystem.cpp Picture.cpp PictureFactory.cpp PictureObserver.cpp PolyDrawable.cpp RotatedBitmap.cpp Snowflake.cpp SpartyFactory.cpp TextBubbleDrawable.cpp Timeline.cpp TimelineDlg.cpp ViewActors.cpp ViewEdit.cpp ViewTimeline.cpp ViewTop.cpp XmlNode.cpp
+         XmlNode.cpp
+         ViewTop.cpp
+         ViewTimeline.cpp
+         ViewEdit.cpp
+         ViewActors.cpp
+         TimelineDlg.cpp
+         Timeline.cpp
+         TextBubbleDrawable.cpp
+         SpartyFactory.cpp
+         Snowflake.cpp
+         RotatedBitmap.cpp
+         PolyDrawable.cpp
+         PictureObserver.cpp
+         PictureFactory.cpp
+         Picture.cpp
+         ParticleSystem.cpp
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\particlesystem.cpp(72): warning C4018: '<' : signed/unsigned mismatch
+         MainFrm.cpp
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\mainfrm.cpp(340): warning C4244: '=' : conversion from 'LONGLONG' to 'double', possible loss of data
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\mainfrm.cpp(368): warning C4244: 'initializing' : conversion from 'double' to '__int64', possible loss of data
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\mainfrm.cpp(370): warning C4244: '=' : conversion from 'LONGLONG' to 'double', possible loss of data
+         LinkedList.cpp
+         Knife.cpp
+         ImageDrawable.cpp
+         Generating Code...
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\linkedlist.cpp(62): warning C4715: 'CLinkedList::Popfront' : not all control paths return a value
+         Compiling...
+         HeadTop.cpp
+         HaroldFactory.cpp
+         Drawable.cpp
+         CanadianExperience.cpp
+         AnimChannelText.cpp
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\animchanneltext.cpp(59): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         AnimChannelPoint.cpp
+         AnimChannelAngle.cpp
+         AnimChannel.cpp
+         ActorFactory.cpp
+         Actor.cpp
+         Generating Code...
+     1>c:\users\eming\desktop\zip\submit\canadianexperience\canadianexperience\actor.cpp(162): warning C4715: 'CActor::GetTextBubbleDrawable' : not all control paths return a value
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\CanadianExperience.res" CanadianExperience.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eming\Desktop\zip\submit\CanadianExperience\Debug\CanadianExperience.exe" /INCREMENTAL /NOLOGO C:\Users\Eming\Desktop\zip\submit\CanadianExperience\Debug\TextBubbleLib.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Eming\Desktop\zip\submit\CanadianExperience\Debug\CanadianExperience.pdb" /SUBSYSTEM:WINDOWS /STACK:"10000000" /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eming\Desktop\zip\submit\CanadianExperience\Debug\CanadianExperience.lib" /MACHINE:X86 Debug\CanadianExperience.res
+         Debug\Actor.obj
+         Debug\ActorFactory.obj
+         Debug\AnimChannel.obj
+         Debug\AnimChannelAngle.obj
+         Debug\AnimChannelPoint.obj
+         Debug\AnimChannelText.obj
+         Debug\CanadianExperience.obj
+         Debug\Drawable.obj
+         Debug\HaroldFactory.obj
+         Debug\HeadTop.obj
+         Debug\ImageDrawable.obj
+         Debug\Knife.obj
+         Debug\LinkedList.obj
+         Debug\MainFrm.obj
+         Debug\ParticleSystem.obj
+         Debug\Picture.obj
+         Debug\PictureFactory.obj
+         Debug\PictureObserver.obj
+         Debug\PolyDrawable.obj
+         Debug\RotatedBitmap.obj
+         Debug\Snowflake.obj
+         Debug\SpartyFactory.obj
+         Debug\stdafx.obj
+         Debug\TextBubbleDrawable.obj
+         Debug\Timeline.obj
+         Debug\TimelineDlg.obj
+         Debug\ViewActors.obj
+         Debug\ViewEdit.obj
+         Debug\ViewTimeline.obj
+         Debug\ViewTop.obj
+         Debug\XmlNode.obj
+         CanadianExperience.vcxproj -> C:\Users\Eming\Desktop\zip\submit\CanadianExperience\Debug\CanadianExperience.exe
+     1>Done Building Project "C:\Users\Eming\Desktop\zip\submit\CanadianExperience\CanadianExperience\CanadianExperience.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.00

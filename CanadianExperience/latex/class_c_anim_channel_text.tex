@@ -1,0 +1,106 @@
+\hypertarget{class_c_anim_channel_text}{\section{C\+Anim\+Channel\+Text Class Reference}
+\label{class_c_anim_channel_text}\index{C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}}
+}
+Inheritance diagram for C\+Anim\+Channel\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_anim_channel_text}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_anim_channel_text_1_1_keyframe_text}{Keyframe\+Text}
+\begin{DoxyCompactList}\small\item\em A ket frame for the text channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_anim_channel_text_ae18bb8f72259762f55a3a66c19d89163}{std\+::wstring \hyperlink{class_c_anim_channel_text_ae18bb8f72259762f55a3a66c19d89163}{Get\+Text} ()}\label{class_c_anim_channel_text_ae18bb8f72259762f55a3a66c19d89163}
+
+\begin{DoxyCompactList}\small\item\em Get the text in the channel. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_text_afcba15848a3ab98d7e418b24a7bdbe40}{bool \hyperlink{class_c_anim_channel_text_afcba15848a3ab98d7e418b24a7bdbe40}{Get\+Mirror} ()}\label{class_c_anim_channel_text_afcba15848a3ab98d7e418b24a7bdbe40}
+
+\begin{DoxyCompactList}\small\item\em Get if the text bubble is mirrored. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_anim_channel_text_a4defed1bebd5453add702bdee67b0dd8}{Set\+Keyframe} (std\+::wstring text, bool mirror)
+\begin{DoxyCompactList}\small\item\em Set the keyframe with given text mirror value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_anim_channel_text_a6bf49ec2ab6856c8741999e64031f99f}{Tween} (double t) override
+\begin{DoxyCompactList}\small\item\em set the text mirro value between two keyfreams \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_anim_channel_text_af30a93b795d45ad49c498c0e96313afd}{Xml\+Load\+Keyframe} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node} $>$ \&node) override
+\begin{DoxyCompactList}\small\item\em The Load function to load the saved setting from the Anim file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_anim_channel_text_a4defed1bebd5453add702bdee67b0dd8}{\index{C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}!Set\+Keyframe@{Set\+Keyframe}}
+\index{Set\+Keyframe@{Set\+Keyframe}!C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}}
+\subsubsection[{Set\+Keyframe}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+Text\+::\+Set\+Keyframe (
+\begin{DoxyParamCaption}
+\item[{std\+::wstring}]{text, }
+\item[{bool}]{mirror}
+\end{DoxyParamCaption}
+)}}\label{class_c_anim_channel_text_a4defed1bebd5453add702bdee67b0dd8}
+
+
+Set the keyframe with given text mirror value. 
+
+Set a keyframe This function allocates a new keyframe and sends it to \hyperlink{class_c_anim_channel}{C\+Anim\+Channel}, which will insert it into the collection of keyframes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & point The text of ketframe \\
+\hline
+{\em mirror} & if the text bubble mirrored or not \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_anim_channel_text_a6bf49ec2ab6856c8741999e64031f99f}{\index{C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}!Tween@{Tween}}
+\index{Tween@{Tween}!C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}}
+\subsubsection[{Tween}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+Text\+::\+Tween (
+\begin{DoxyParamCaption}
+\item[{double}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_anim_channel_text_a6bf49ec2ab6856c8741999e64031f99f}
+
+
+set the text mirro value between two keyfreams 
+
+tween function to set the text and mirror value Between two frames
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & time \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_anim_channel_adf83febfff4c3db9e9f56de72735f8ee}{C\+Anim\+Channel}.
+
+\hypertarget{class_c_anim_channel_text_af30a93b795d45ad49c498c0e96313afd}{\index{C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}!Xml\+Load\+Keyframe@{Xml\+Load\+Keyframe}}
+\index{Xml\+Load\+Keyframe@{Xml\+Load\+Keyframe}!C\+Anim\+Channel\+Text@{C\+Anim\+Channel\+Text}}
+\subsubsection[{Xml\+Load\+Keyframe}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+Text\+::\+Xml\+Load\+Keyframe (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf xmlnode\+::\+C\+Xml\+Node} $>$ \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_anim_channel_text_af30a93b795d45ad49c498c0e96313afd}
+
+
+The Load function to load the saved setting from the Anim file. 
+
+Handle loading this channel's keyframe type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & keyframe tag node \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_anim_channel_a2df7b3fed2b3faf34c585446628fc874}{C\+Anim\+Channel}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_anim_channel_text_8h}{Anim\+Channel\+Text.\+h}\item 
+\hyperlink{_anim_channel_text_8cpp}{Anim\+Channel\+Text.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{class_c_timeline}{\section{C\+Timeline Class Reference}
+\label{class_c_timeline}\index{C\+Timeline@{C\+Timeline}}
+}
+
+
+The animation timeline class.  
+
+
+
+
+{\ttfamily \#include $<$Timeline.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_timeline_ab635cefbd9093370e384b3b6eab9f538}{\hyperlink{class_c_timeline_ab635cefbd9093370e384b3b6eab9f538}{C\+Timeline} ()}\label{class_c_timeline_ab635cefbd9093370e384b3b6eab9f538}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_timeline_a751f5ee4922951e58c0e8aeabc763de4}{virtual \hyperlink{class_c_timeline_a751f5ee4922951e58c0e8aeabc763de4}{$\sim$\+C\+Timeline} ()}\label{class_c_timeline_a751f5ee4922951e58c0e8aeabc763de4}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_timeline_adde2f3adeeec5df639c42f0d2f2fa656}{\hyperlink{class_c_timeline_adde2f3adeeec5df639c42f0d2f2fa656}{C\+Timeline} (const \hyperlink{class_c_timeline}{C\+Timeline} \&)=delete}\label{class_c_timeline_adde2f3adeeec5df639c42f0d2f2fa656}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_timeline_a3baad1e0caf007042b8f4baeb5e9705f}{void \hyperlink{class_c_timeline_a3baad1e0caf007042b8f4baeb5e9705f}{operator=} (const \hyperlink{class_c_timeline}{C\+Timeline} \&)=delete}\label{class_c_timeline_a3baad1e0caf007042b8f4baeb5e9705f}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_timeline_a074dbbf92a511826bce794b09865019d}{Get\+Num\+Frames} () const 
+\begin{DoxyCompactList}\small\item\em Get the number of frames in the animation. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timeline_a630bf5d1ef949b8fe7f8417e7a7dea5f}{Set\+Num\+Frames} (int num\+Frames)
+\begin{DoxyCompactList}\small\item\em Set the number of frames in the animation. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_timeline_a78ce3a20bd9f99d2f02123642d552982}{Get\+Frame\+Rate} () const 
+\begin{DoxyCompactList}\small\item\em Get the frame rate. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timeline_af10874504b3128c88b17ef3795aaa57e}{Set\+Frame\+Rate} (int frame\+Rate)
+\begin{DoxyCompactList}\small\item\em Set the frame rate. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_timeline_acd50ce5a8064c562d5ab32d98ad04c0e}{Get\+Current\+Time} () const 
+\begin{DoxyCompactList}\small\item\em Get the current time. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timeline_acabdd623028b09cb08a9a9afcdeaeae9}{Set\+Current\+Time} (double t)
+\begin{DoxyCompactList}\small\item\em Sets the current time. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_timeline_a87c72f53763f27ed9a695be6513c77d4}{Get\+Current\+Frame} () const 
+\begin{DoxyCompactList}\small\item\em Get the current frame. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_timeline_a5638f7be740db313fb156f1fa3d8e03d}{Get\+Duration} () const 
+\begin{DoxyCompactList}\small\item\em Get the animation duration. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timeline_ac97b97b9c86dae3f8668cc42b8d1f455}{Add\+Channel} (\hyperlink{class_c_anim_channel}{C\+Anim\+Channel} $\ast$channel)
+\begin{DoxyCompactList}\small\item\em Add an animation channel to the timeline. \end{DoxyCompactList}\item 
+\hypertarget{class_c_timeline_a2bfaaa0a7d5fcd9ef041dbc2c2d5f9ba}{void \hyperlink{class_c_timeline_a2bfaaa0a7d5fcd9ef041dbc2c2d5f9ba}{Clear\+Keyframe} ()}\label{class_c_timeline_a2bfaaa0a7d5fcd9ef041dbc2c2d5f9ba}
+
+\begin{DoxyCompactList}\small\item\em Clear any keyframe at the current time. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timeline_a9e5db8d5f292f87a3864c66a71c6a70a}{Save} (const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Save the timeline animation to a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_timeline_a39f85a61a4df2ea0ae8129bf2b28d0e7}{Load} (const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Load a timeline animation from a file. \end{DoxyCompactList}\item 
+\hypertarget{class_c_timeline_a14be47e5526d88654d6ee07951c82cc7}{void \hyperlink{class_c_timeline_a14be47e5526d88654d6ee07951c82cc7}{Clear} ()}\label{class_c_timeline_a14be47e5526d88654d6ee07951c82cc7}
+
+\begin{DoxyCompactList}\small\item\em Clear all keyframes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The animation timeline class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_timeline_ac97b97b9c86dae3f8668cc42b8d1f455}{\index{C\+Timeline@{C\+Timeline}!Add\+Channel@{Add\+Channel}}
+\index{Add\+Channel@{Add\+Channel}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Add\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timeline\+::\+Add\+Channel (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Anim\+Channel} $\ast$}]{channel}
+\end{DoxyParamCaption}
+)}}\label{class_c_timeline_ac97b97b9c86dae3f8668cc42b8d1f455}
+
+
+Add an animation channel to the timeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_timeline_a87c72f53763f27ed9a695be6513c77d4}{\index{C\+Timeline@{C\+Timeline}!Get\+Current\+Frame@{Get\+Current\+Frame}}
+\index{Get\+Current\+Frame@{Get\+Current\+Frame}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Get\+Current\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Timeline\+::\+Get\+Current\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_a87c72f53763f27ed9a695be6513c77d4}
+
+
+Get the current frame. 
+
+This is the frame associated with the current time \begin{DoxyReturn}{Returns}
+Current frame 
+\end{DoxyReturn}
+\hypertarget{class_c_timeline_acd50ce5a8064c562d5ab32d98ad04c0e}{\index{C\+Timeline@{C\+Timeline}!Get\+Current\+Time@{Get\+Current\+Time}}
+\index{Get\+Current\+Time@{Get\+Current\+Time}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Get\+Current\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Timeline\+::\+Get\+Current\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_acd50ce5a8064c562d5ab32d98ad04c0e}
+
+
+Get the current time. 
+
+\begin{DoxyReturn}{Returns}
+Current animation time in seconds 
+\end{DoxyReturn}
+\hypertarget{class_c_timeline_a5638f7be740db313fb156f1fa3d8e03d}{\index{C\+Timeline@{C\+Timeline}!Get\+Duration@{Get\+Duration}}
+\index{Get\+Duration@{Get\+Duration}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Get\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Timeline\+::\+Get\+Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_a5638f7be740db313fb156f1fa3d8e03d}
+
+
+Get the animation duration. 
+
+\begin{DoxyReturn}{Returns}
+Animation duration in seconds 
+\end{DoxyReturn}
+\hypertarget{class_c_timeline_a78ce3a20bd9f99d2f02123642d552982}{\index{C\+Timeline@{C\+Timeline}!Get\+Frame\+Rate@{Get\+Frame\+Rate}}
+\index{Get\+Frame\+Rate@{Get\+Frame\+Rate}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Get\+Frame\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Timeline\+::\+Get\+Frame\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_a78ce3a20bd9f99d2f02123642d552982}
+
+
+Get the frame rate. 
+
+\begin{DoxyReturn}{Returns}
+Animation frame rate in frames per second 
+\end{DoxyReturn}
+\hypertarget{class_c_timeline_a074dbbf92a511826bce794b09865019d}{\index{C\+Timeline@{C\+Timeline}!Get\+Num\+Frames@{Get\+Num\+Frames}}
+\index{Get\+Num\+Frames@{Get\+Num\+Frames}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Get\+Num\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Timeline\+::\+Get\+Num\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_a074dbbf92a511826bce794b09865019d}
+
+
+Get the number of frames in the animation. 
+
+\begin{DoxyReturn}{Returns}
+Number of frames in the animation 
+\end{DoxyReturn}
+\hypertarget{class_c_timeline_a39f85a61a4df2ea0ae8129bf2b28d0e7}{\index{C\+Timeline@{C\+Timeline}!Load@{Load}}
+\index{Load@{Load}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timeline\+::\+Load (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_c_timeline_a39f85a61a4df2ea0ae8129bf2b28d0e7}
+
+
+Load a timeline animation from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file to load from \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_timeline_a9e5db8d5f292f87a3864c66a71c6a70a}{\index{C\+Timeline@{C\+Timeline}!Save@{Save}}
+\index{Save@{Save}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timeline\+::\+Save (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_c_timeline_a9e5db8d5f292f87a3864c66a71c6a70a}
+
+
+Save the timeline animation to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to save to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_timeline_acabdd623028b09cb08a9a9afcdeaeae9}{\index{C\+Timeline@{C\+Timeline}!Set\+Current\+Time@{Set\+Current\+Time}}
+\index{Set\+Current\+Time@{Set\+Current\+Time}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Set\+Current\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timeline\+::\+Set\+Current\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_c_timeline_acabdd623028b09cb08a9a9afcdeaeae9}
+
+
+Sets the current time. 
+
+Ensures all of the channels are valid for that point in time. 
+\begin{DoxyParams}{Parameters}
+{\em t} & The new time to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_timeline_af10874504b3128c88b17ef3795aaa57e}{\index{C\+Timeline@{C\+Timeline}!Set\+Frame\+Rate@{Set\+Frame\+Rate}}
+\index{Set\+Frame\+Rate@{Set\+Frame\+Rate}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Set\+Frame\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timeline\+::\+Set\+Frame\+Rate (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\+Rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_af10874504b3128c88b17ef3795aaa57e}
+
+
+Set the frame rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Rate} & Animation frame rate in frames per second \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_timeline_a630bf5d1ef949b8fe7f8417e7a7dea5f}{\index{C\+Timeline@{C\+Timeline}!Set\+Num\+Frames@{Set\+Num\+Frames}}
+\index{Set\+Num\+Frames@{Set\+Num\+Frames}!C\+Timeline@{C\+Timeline}}
+\subsubsection[{Set\+Num\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Timeline\+::\+Set\+Num\+Frames (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Frames}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_timeline_a630bf5d1ef949b8fe7f8417e7a7dea5f}
+
+
+Set the number of frames in the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Frames} & Number of frames in the animation \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_timeline_8h}{Timeline.\+h}\item 
+\hyperlink{_timeline_8cpp}{Timeline.\+cpp}\end{DoxyCompactItemize}

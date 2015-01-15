@@ -1,0 +1,149 @@
+\hypertarget{class_c_rotated_bitmap}{\section{C\+Rotated\+Bitmap Class Reference}
+\label{class_c_rotated_bitmap}\index{C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}}
+}
+
+
+Base class for a rotated bitmap.  
+
+
+
+
+{\ttfamily \#include $<$Rotated\+Bitmap.\+h$>$}
+
+Inheritance diagram for C\+Rotated\+Bitmap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_rotated_bitmap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_rotated_bitmap_a365819034778a6afbb1b10d4901ace2f}{\hyperlink{class_c_rotated_bitmap_a365819034778a6afbb1b10d4901ace2f}{C\+Rotated\+Bitmap} ()}\label{class_c_rotated_bitmap_a365819034778a6afbb1b10d4901ace2f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_rotated_bitmap_ac8e1965b53e52ed4e9f136922323a995}{virtual \hyperlink{class_c_rotated_bitmap_ac8e1965b53e52ed4e9f136922323a995}{$\sim$\+C\+Rotated\+Bitmap} ()}\label{class_c_rotated_bitmap_ac8e1965b53e52ed4e9f136922323a995}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_rotated_bitmap_a1d8ebcd9419be8f843424bbf358bf97b}{\hyperlink{class_c_rotated_bitmap_a1d8ebcd9419be8f843424bbf358bf97b}{C\+Rotated\+Bitmap} (const \hyperlink{class_c_rotated_bitmap}{C\+Rotated\+Bitmap} \&)=delete}\label{class_c_rotated_bitmap_a1d8ebcd9419be8f843424bbf358bf97b}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_rotated_bitmap_acd754404ab66f7f2f8336eaa5d9391cb}{void \hyperlink{class_c_rotated_bitmap_acd754404ab66f7f2f8336eaa5d9391cb}{operator=} (const \hyperlink{class_c_rotated_bitmap}{C\+Rotated\+Bitmap} \&)=delete}\label{class_c_rotated_bitmap_acd754404ab66f7f2f8336eaa5d9391cb}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rotated_bitmap_ab4bd32142fb989ebd61cf6f948a9b27f}{Load\+Image} (const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Load the image from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rotated_bitmap_a335b9038c2df31f3517486d2e36d1928}{Draw\+Image} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Point position, double angle)
+\begin{DoxyCompactList}\small\item\em Draw the bitmap. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rotated_bitmap_a1c1e4efb36d0d3512a3ffd355817d409}{Set\+Center} (Gdiplus\+::\+Point center)
+\begin{DoxyCompactList}\small\item\em Set the center to rotate around. \end{DoxyCompactList}\item 
+Gdiplus\+::\+Point \hyperlink{class_c_rotated_bitmap_ac721fb576d19da95a5640d729260fbe7}{Get\+Center} () const 
+\begin{DoxyCompactList}\small\item\em Get the center to rotate around. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_rotated_bitmap_ae8a14cdbc38ca7a7b15a665de89ab142}{Is\+Loaded} () const 
+\begin{DoxyCompactList}\small\item\em Is this bitmap loaded for use? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_rotated_bitmap_aacdd9cba61ed0a8a5b90ee0a40bc18df}{std\+::unique\+\_\+ptr$<$ Gdiplus\+::\+Bitmap $>$ \hyperlink{class_c_rotated_bitmap_aacdd9cba61ed0a8a5b90ee0a40bc18df}{m\+Image}}\label{class_c_rotated_bitmap_aacdd9cba61ed0a8a5b90ee0a40bc18df}
+
+\begin{DoxyCompactList}\small\item\em The image for this drawable. \end{DoxyCompactList}\item 
+\hypertarget{class_c_rotated_bitmap_a67c587b5b5d6dfb609708a3c62f37a0d}{Gdiplus\+::\+Point \hyperlink{class_c_rotated_bitmap_a67c587b5b5d6dfb609708a3c62f37a0d}{m\+Center} = Gdiplus\+::\+Point(0, 0)}\label{class_c_rotated_bitmap_a67c587b5b5d6dfb609708a3c62f37a0d}
+
+\begin{DoxyCompactList}\small\item\em The center of the image. \end{DoxyCompactList}\item 
+\hypertarget{class_c_rotated_bitmap_a99f6dbd45bf8cb36b1eaa101520789bf}{bool \hyperlink{class_c_rotated_bitmap_a99f6dbd45bf8cb36b1eaa101520789bf}{m\+Loaded} = false}\label{class_c_rotated_bitmap_a99f6dbd45bf8cb36b1eaa101520789bf}
+
+\begin{DoxyCompactList}\small\item\em Has an image been loaded? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for a rotated bitmap. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_rotated_bitmap_a335b9038c2df31f3517486d2e36d1928}{\index{C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}!Draw\+Image@{Draw\+Image}}
+\index{Draw\+Image@{Draw\+Image}!C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}}
+\subsubsection[{Draw\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rotated\+Bitmap\+::\+Draw\+Image (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics, }
+\item[{Gdiplus\+::\+Point}]{position, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_c_rotated_bitmap_a335b9038c2df31f3517486d2e36d1928}
+
+
+Draw the bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on \\
+\hline
+{\em position} & The position to draw at \\
+\hline
+{\em angle} & The rotation angle \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rotated_bitmap_ac721fb576d19da95a5640d729260fbe7}{\index{C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}!Get\+Center@{Get\+Center}}
+\index{Get\+Center@{Get\+Center}!C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}}
+\subsubsection[{Get\+Center}]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Point C\+Rotated\+Bitmap\+::\+Get\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_rotated_bitmap_ac721fb576d19da95a5640d729260fbe7}
+
+
+Get the center to rotate around. 
+
+\begin{DoxyReturn}{Returns}
+Center 
+\end{DoxyReturn}
+\hypertarget{class_c_rotated_bitmap_ae8a14cdbc38ca7a7b15a665de89ab142}{\index{C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}!Is\+Loaded@{Is\+Loaded}}
+\index{Is\+Loaded@{Is\+Loaded}!C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}}
+\subsubsection[{Is\+Loaded}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Rotated\+Bitmap\+::\+Is\+Loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_rotated_bitmap_ae8a14cdbc38ca7a7b15a665de89ab142}
+
+
+Is this bitmap loaded for use? 
+
+\begin{DoxyReturn}{Returns}
+true if loaded 
+\end{DoxyReturn}
+\hypertarget{class_c_rotated_bitmap_ab4bd32142fb989ebd61cf6f948a9b27f}{\index{C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}!Load\+Image@{Load\+Image}}
+\index{Load\+Image@{Load\+Image}!C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}}
+\subsubsection[{Load\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rotated\+Bitmap\+::\+Load\+Image (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_c_rotated_bitmap_ab4bd32142fb989ebd61cf6f948a9b27f}
+
+
+Load the image from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to load \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rotated_bitmap_a1c1e4efb36d0d3512a3ffd355817d409}{\index{C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}!Set\+Center@{Set\+Center}}
+\index{Set\+Center@{Set\+Center}!C\+Rotated\+Bitmap@{C\+Rotated\+Bitmap}}
+\subsubsection[{Set\+Center}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rotated\+Bitmap\+::\+Set\+Center (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_rotated_bitmap_a1c1e4efb36d0d3512a3ffd355817d409}
+
+
+Set the center to rotate around. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & New center \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_rotated_bitmap_8h}{Rotated\+Bitmap.\+h}\item 
+\hyperlink{_rotated_bitmap_8cpp}{Rotated\+Bitmap.\+cpp}\end{DoxyCompactItemize}

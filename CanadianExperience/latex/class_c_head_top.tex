@@ -1,0 +1,307 @@
+\hypertarget{class_c_head_top}{\section{C\+Head\+Top Class Reference}
+\label{class_c_head_top}\index{C\+Head\+Top@{C\+Head\+Top}}
+}
+
+
+Implements the top of a characters head, which has special functionality.  
+
+
+
+
+{\ttfamily \#include $<$Head\+Top.\+h$>$}
+
+Inheritance diagram for C\+Head\+Top\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_head_top}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}{C\+Head\+Top} (const std\+::wstring \&name, const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Constructor for a top of the head object. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}{\hyperlink{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}{$\sim$\+C\+Head\+Top} ()}\label{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}{\hyperlink{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}{C\+Head\+Top} ()=delete}\label{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_a574b5950dff9f90de01219437f475cb9}{\hyperlink{class_c_head_top_a574b5950dff9f90de01219437f475cb9}{C\+Head\+Top} (const \hyperlink{class_c_head_top}{C\+Head\+Top} \&)=delete}\label{class_c_head_top_a574b5950dff9f90de01219437f475cb9}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_aeb3522f283f90cb48b7b6a7ed6243aeb}{void \hyperlink{class_c_head_top_aeb3522f283f90cb48b7b6a7ed6243aeb}{operator=} (const \hyperlink{class_c_head_top}{C\+Head\+Top} \&)=delete}\label{class_c_head_top_aeb3522f283f90cb48b7b6a7ed6243aeb}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_c_head_top_a853b7d9f248dc36519f1da6c4d53b18e}{Is\+Movable} ()
+\begin{DoxyCompactList}\small\item\em Is this drawable moveable? \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_aa77d9fa703079ee68a4e4e8e3c816932}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Draw the head. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_ad774e7f2bf3e5ca5e1fdf36d61a2d146}{Draw\+Eyebrow} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Point p1, Gdiplus\+::\+Point p2)
+\begin{DoxyCompactList}\small\item\em Draw an eyebrow, automatically transforming the points. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_a01e507dfcc8cad78070a1a043c4d1593}{Draw\+Eye} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Point p1)
+\begin{DoxyCompactList}\small\item\em Draw an eye using an Ellipse. \end{DoxyCompactList}\item 
+\hyperlink{class_c_rotated_bitmap}{C\+Rotated\+Bitmap} $\ast$ \hyperlink{class_c_head_top_a7e95969a73f21d5c903e063327fc9ceb}{Get\+Left\+Eye} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the left eye bitmap. \end{DoxyCompactList}\item 
+\hyperlink{class_c_rotated_bitmap}{C\+Rotated\+Bitmap} $\ast$ \hyperlink{class_c_head_top_a8c1d433844eece9162dee0692ffca34b}{Get\+Right\+Eye} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the left eye bitmap. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_af7e4ce00dae8da5a169da60d43f5c19c}{Set\+Eyes\+Center} (Gdiplus\+::\+Point center)
+\begin{DoxyCompactList}\small\item\em Set the location for the center of the eyes. \end{DoxyCompactList}\item 
+Gdiplus\+::\+Point \hyperlink{class_c_head_top_aa8686e0e7ac6bb8a1d4a5bf39bbdb076}{Get\+Eyes\+Center} () const 
+\begin{DoxyCompactList}\small\item\em Get the eyes center location. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_a8ef7007f2e4f579fc5b06f601234dd5e}{Set\+Interocular\+Distance} (int d)
+\begin{DoxyCompactList}\small\item\em Set the distance between the eyes. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_head_top_aa180bb1fff39bc753c70e634b5ad36ba}{Get\+Interocular\+Distance} () const 
+\begin{DoxyCompactList}\small\item\em Get the distance between the eyes. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_head_top_a740ff72a9e96c8407a858079f14f0ad3}{Set\+Actor} (\hyperlink{class_c_actor}{C\+Actor} $\ast$actor) override
+\begin{DoxyCompactList}\small\item\em Set the actor. This is where we set the channel name. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_head_top_a379aaabd0a8d4a80751341bccc2faeda}{Set\+Timeline} (\hyperlink{class_c_timeline}{C\+Timeline} $\ast$timeline) override
+\begin{DoxyCompactList}\small\item\em Set the timeline. The tells the channel the timeline. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_aa644db57e1a054733d271eee2d4dbe4a}{virtual void \hyperlink{class_c_head_top_aa644db57e1a054733d271eee2d4dbe4a}{Set\+Keyframe} () override}\label{class_c_head_top_aa644db57e1a054733d271eee2d4dbe4a}
+
+\begin{DoxyCompactList}\small\item\em Set the keyframe based on the current status. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_ab6188832d140455f7b35d3a70f03020f}{virtual void \hyperlink{class_c_head_top_ab6188832d140455f7b35d3a70f03020f}{Get\+Keyframe} () override}\label{class_c_head_top_ab6188832d140455f7b35d3a70f03020f}
+
+\begin{DoxyCompactList}\small\item\em Get the current channel from the animation system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements the top of a characters head, which has special functionality. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}{\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{C\+Head\+Top}]{\setlength{\rightskip}{0pt plus 5cm}C\+Head\+Top\+::\+C\+Head\+Top (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}
+
+
+Constructor for a top of the head object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The drawable name to use \\
+\hline
+{\em filename} & The filename for the image to use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_head_top_aa77d9fa703079ee68a4e4e8e3c816932}{\index{C\+Head\+Top@{C\+Head\+Top}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_head_top_aa77d9fa703079ee68a4e4e8e3c816932}
+
+
+Draw the head. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics context to draw on \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_image_drawable_ada4d5d342230fbecb7169e4f3324ee52}{C\+Image\+Drawable}.
+
+\hypertarget{class_c_head_top_a01e507dfcc8cad78070a1a043c4d1593}{\index{C\+Head\+Top@{C\+Head\+Top}!Draw\+Eye@{Draw\+Eye}}
+\index{Draw\+Eye@{Draw\+Eye}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw\+Eye}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw\+Eye (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics, }
+\item[{Gdiplus\+::\+Point}]{p1}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_a01e507dfcc8cad78070a1a043c4d1593}
+
+
+Draw an eye using an Ellipse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on \\
+\hline
+{\em p1} & Where to draw before transformation \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_ad774e7f2bf3e5ca5e1fdf36d61a2d146}{\index{C\+Head\+Top@{C\+Head\+Top}!Draw\+Eyebrow@{Draw\+Eyebrow}}
+\index{Draw\+Eyebrow@{Draw\+Eyebrow}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw\+Eyebrow}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw\+Eyebrow (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics, }
+\item[{Gdiplus\+::\+Point}]{p1, }
+\item[{Gdiplus\+::\+Point}]{p2}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_ad774e7f2bf3e5ca5e1fdf36d61a2d146}
+
+
+Draw an eyebrow, automatically transforming the points. 
+
+Draw a line from (x1, y1) to (x2, y2) after transformation to the local coordinate system. 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics context to draw on \\
+\hline
+{\em p1} & First point \\
+\hline
+{\em p2} & Second point \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_aa8686e0e7ac6bb8a1d4a5bf39bbdb076}{\index{C\+Head\+Top@{C\+Head\+Top}!Get\+Eyes\+Center@{Get\+Eyes\+Center}}
+\index{Get\+Eyes\+Center@{Get\+Eyes\+Center}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Get\+Eyes\+Center}]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Point C\+Head\+Top\+::\+Get\+Eyes\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_aa8686e0e7ac6bb8a1d4a5bf39bbdb076}
+
+
+Get the eyes center location. 
+
+\begin{DoxyReturn}{Returns}
+Eyes center location 
+\end{DoxyReturn}
+\hypertarget{class_c_head_top_aa180bb1fff39bc753c70e634b5ad36ba}{\index{C\+Head\+Top@{C\+Head\+Top}!Get\+Interocular\+Distance@{Get\+Interocular\+Distance}}
+\index{Get\+Interocular\+Distance@{Get\+Interocular\+Distance}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Get\+Interocular\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Head\+Top\+::\+Get\+Interocular\+Distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_aa180bb1fff39bc753c70e634b5ad36ba}
+
+
+Get the distance between the eyes. 
+
+\begin{DoxyReturn}{Returns}
+Distance between the eyes in pixels 
+\end{DoxyReturn}
+\hypertarget{class_c_head_top_a7e95969a73f21d5c903e063327fc9ceb}{\index{C\+Head\+Top@{C\+Head\+Top}!Get\+Left\+Eye@{Get\+Left\+Eye}}
+\index{Get\+Left\+Eye@{Get\+Left\+Eye}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Get\+Left\+Eye}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Rotated\+Bitmap}$\ast$ C\+Head\+Top\+::\+Get\+Left\+Eye (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_a7e95969a73f21d5c903e063327fc9ceb}
+
+
+Get a pointer to the left eye bitmap. 
+
+\begin{DoxyReturn}{Returns}
+Pointers to the left eye bitmap 
+\end{DoxyReturn}
+\hypertarget{class_c_head_top_a8c1d433844eece9162dee0692ffca34b}{\index{C\+Head\+Top@{C\+Head\+Top}!Get\+Right\+Eye@{Get\+Right\+Eye}}
+\index{Get\+Right\+Eye@{Get\+Right\+Eye}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Get\+Right\+Eye}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Rotated\+Bitmap}$\ast$ C\+Head\+Top\+::\+Get\+Right\+Eye (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_a8c1d433844eece9162dee0692ffca34b}
+
+
+Get a pointer to the left eye bitmap. 
+
+\begin{DoxyReturn}{Returns}
+Pointers to the left eye bitmap 
+\end{DoxyReturn}
+\hypertarget{class_c_head_top_a853b7d9f248dc36519f1da6c4d53b18e}{\index{C\+Head\+Top@{C\+Head\+Top}!Is\+Movable@{Is\+Movable}}
+\index{Is\+Movable@{Is\+Movable}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Is\+Movable}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\+Head\+Top\+::\+Is\+Movable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_head_top_a853b7d9f248dc36519f1da6c4d53b18e}
+
+
+Is this drawable moveable? 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_drawable_ac9f03cfc58aed75fb52cd69c71e7b6e0}{C\+Drawable}.
+
+\hypertarget{class_c_head_top_a740ff72a9e96c8407a858079f14f0ad3}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Actor@{Set\+Actor}}
+\index{Set\+Actor@{Set\+Actor}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Actor}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Actor (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Actor} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_head_top_a740ff72a9e96c8407a858079f14f0ad3}
+
+
+Set the actor. This is where we set the channel name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor} & Actor to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a86762c6e220d9f502c6ccf9baf1135ac}{C\+Drawable}.
+
+\hypertarget{class_c_head_top_af7e4ce00dae8da5a169da60d43f5c19c}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Eyes\+Center@{Set\+Eyes\+Center}}
+\index{Set\+Eyes\+Center@{Set\+Eyes\+Center}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Eyes\+Center}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Eyes\+Center (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_af7e4ce00dae8da5a169da60d43f5c19c}
+
+
+Set the location for the center of the eyes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & New eyes center location \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a8ef7007f2e4f579fc5b06f601234dd5e}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Interocular\+Distance@{Set\+Interocular\+Distance}}
+\index{Set\+Interocular\+Distance@{Set\+Interocular\+Distance}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Interocular\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Interocular\+Distance (
+\begin{DoxyParamCaption}
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_a8ef7007f2e4f579fc5b06f601234dd5e}
+
+
+Set the distance between the eyes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Distance between the eyes in pixels \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a379aaabd0a8d4a80751341bccc2faeda}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Timeline@{Set\+Timeline}}
+\index{Set\+Timeline@{Set\+Timeline}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Timeline}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Timeline (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Timeline} $\ast$}]{timeline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_head_top_a379aaabd0a8d4a80751341bccc2faeda}
+
+
+Set the timeline. The tells the channel the timeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeline} & Timeline to set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_c_drawable_a479df46ae298bf716d96b05b1ba6e529}{C\+Drawable}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_head_top_8h}{Head\+Top.\+h}\item 
+Head\+Top.\+cpp\end{DoxyCompactItemize}

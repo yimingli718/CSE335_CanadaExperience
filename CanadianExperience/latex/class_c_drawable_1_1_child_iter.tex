@@ -1,0 +1,103 @@
+\hypertarget{class_c_drawable_1_1_child_iter}{\section{C\+Drawable\+:\+:Child\+Iter Class Reference}
+\label{class_c_drawable_1_1_child_iter}\index{C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}}
+}
+
+
+Iterator that iterates over the children of this drawable.  
+
+
+
+
+{\ttfamily \#include $<$Drawable.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_drawable_1_1_child_iter_aff2b166d86e322969bb14d031c836245}{Child\+Iter} (\hyperlink{class_c_drawable}{C\+Drawable} $\ast$drawable, int pos)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_drawable_1_1_child_iter_a3f803c70911990c08c35e73b2572cc09}{operator!=} (const \hyperlink{class_c_drawable_1_1_child_iter}{Child\+Iter} \&other) const 
+\begin{DoxyCompactList}\small\item\em Test for end of the iterator. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_drawable}{C\+Drawable} $>$ \hyperlink{class_c_drawable_1_1_child_iter_af7785aca65c748b70114095dee19ea79}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Get value at current position. \end{DoxyCompactList}\item 
+const \hyperlink{class_c_drawable_1_1_child_iter}{Child\+Iter} \& \hyperlink{class_c_drawable_1_1_child_iter_a57a843f770364ca146899f64b24c6999}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Increment the iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Iterator that iterates over the children of this drawable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_drawable_1_1_child_iter_aff2b166d86e322969bb14d031c836245}{\index{C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}!Child\+Iter@{Child\+Iter}}
+\index{Child\+Iter@{Child\+Iter}!C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}}
+\subsubsection[{Child\+Iter}]{\setlength{\rightskip}{0pt plus 5cm}C\+Drawable\+::\+Child\+Iter\+::\+Child\+Iter (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Drawable} $\ast$}]{drawable, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_drawable_1_1_child_iter_aff2b166d86e322969bb14d031c836245}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable} & Picture we are iterating \\
+\hline
+{\em pos} & Starting position \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_drawable_1_1_child_iter_a3f803c70911990c08c35e73b2572cc09}{\index{C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Drawable\+::\+Child\+Iter\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Child\+Iter} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_drawable_1_1_child_iter_a3f803c70911990c08c35e73b2572cc09}
+
+
+Test for end of the iterator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other object to test against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we this position equals not equal to the other position 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_1_1_child_iter_af7785aca65c748b70114095dee19ea79}{\index{C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Drawable}$>$ C\+Drawable\+::\+Child\+Iter\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_drawable_1_1_child_iter_af7785aca65c748b70114095dee19ea79}
+
+
+Get value at current position. 
+
+\begin{DoxyReturn}{Returns}
+Value at m\+Pos in the collection 
+\end{DoxyReturn}
+\hypertarget{class_c_drawable_1_1_child_iter_a57a843f770364ca146899f64b24c6999}{\index{C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}!operator++@{operator++}}
+\index{operator++@{operator++}!C\+Drawable\+::\+Child\+Iter@{C\+Drawable\+::\+Child\+Iter}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Child\+Iter}\& C\+Drawable\+::\+Child\+Iter\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_drawable_1_1_child_iter_a57a843f770364ca146899f64b24c6999}
+
+
+Increment the iterator. 
+
+\begin{DoxyReturn}{Returns}
+Reference to this iterator 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_drawable_8h}{Drawable.\+h}\end{DoxyCompactItemize}

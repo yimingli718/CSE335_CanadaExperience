@@ -1,0 +1,141 @@
+\hypertarget{class_c_anim_channel_1_1_keyframe}{\section{C\+Anim\+Channel\+:\+:Keyframe Class Reference}
+\label{class_c_anim_channel_1_1_keyframe}\index{C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}}
+}
+
+
+Class that represents a keyframe.  
+
+
+
+
+{\ttfamily \#include $<$Anim\+Channel.\+h$>$}
+
+Inheritance diagram for C\+Anim\+Channel\+:\+:Keyframe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_anim_channel_1_1_keyframe}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_a88096d3eecc2aa502bae62906107c8c1}{\hyperlink{class_c_anim_channel_1_1_keyframe_a88096d3eecc2aa502bae62906107c8c1}{Keyframe} ()=delete}\label{class_c_anim_channel_1_1_keyframe_a88096d3eecc2aa502bae62906107c8c1}
+
+\begin{DoxyCompactList}\small\item\em Default constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_a3f1c6e4c4eba22d6b8bdd6aa971d0200}{\hyperlink{class_c_anim_channel_1_1_keyframe_a3f1c6e4c4eba22d6b8bdd6aa971d0200}{Keyframe} (const \hyperlink{class_c_anim_channel_1_1_keyframe}{Keyframe} \&)=delete}\label{class_c_anim_channel_1_1_keyframe_a3f1c6e4c4eba22d6b8bdd6aa971d0200}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_a0b5fe25a49eba43386aa4e9e91ad3b54}{void \hyperlink{class_c_anim_channel_1_1_keyframe_a0b5fe25a49eba43386aa4e9e91ad3b54}{operator=} (const \hyperlink{class_c_anim_channel_1_1_keyframe}{Keyframe} \&)=delete}\label{class_c_anim_channel_1_1_keyframe_a0b5fe25a49eba43386aa4e9e91ad3b54}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_anim_channel_1_1_keyframe_ab772a5915170d21d88e9259dbed24191}{Get\+Frame} () const 
+\begin{DoxyCompactList}\small\item\em Get the frame for this keyframe. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_anim_channel_1_1_keyframe_a19e0ffcf6eab8a2c9eef7cd35f0ca8d7}{Set\+Frame} (int f)
+\begin{DoxyCompactList}\small\item\em Set the frame for this keyframe. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_ab299b5d67b1a6314421dd0d718f15493}{virtual void \hyperlink{class_c_anim_channel_1_1_keyframe_ab299b5d67b1a6314421dd0d718f15493}{Use\+As1} ()=0}\label{class_c_anim_channel_1_1_keyframe_ab299b5d67b1a6314421dd0d718f15493}
+
+\begin{DoxyCompactList}\small\item\em Indicates this keyframe is used as Keyframe1. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_acee82565971cf385abbc94c4fd29c6a5}{virtual void \hyperlink{class_c_anim_channel_1_1_keyframe_acee82565971cf385abbc94c4fd29c6a5}{Use\+As2} ()=0}\label{class_c_anim_channel_1_1_keyframe_acee82565971cf385abbc94c4fd29c6a5}
+
+\begin{DoxyCompactList}\small\item\em Indicates this keyframe is used as Keyframe2. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_a70a183c3caabf9b820d41cae4d5fa5ae}{virtual void \hyperlink{class_c_anim_channel_1_1_keyframe_a70a183c3caabf9b820d41cae4d5fa5ae}{Use\+Only} ()=0}\label{class_c_anim_channel_1_1_keyframe_a70a183c3caabf9b820d41cae4d5fa5ae}
+
+\begin{DoxyCompactList}\small\item\em Indicates this is the only keyframe. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr\\*
+$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node} $>$ \hyperlink{class_c_anim_channel_1_1_keyframe_a2dbc0b264510a45b9a429f64aa2d8448}{Xml\+Save} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node} $>$ \&node)
+\begin{DoxyCompactList}\small\item\em Save this keyframe to an X\+M\+L node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_anim_channel_1_1_keyframe_a123c8c5557957a1202d9987fce83b31e}{Keyframe} (\hyperlink{class_c_anim_channel}{C\+Anim\+Channel} $\ast$channel)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_anim_channel_1_1_keyframe_ae946ed89ac4a6b4ecb6cefd5a64777a7}{int \hyperlink{class_c_anim_channel_1_1_keyframe_ae946ed89ac4a6b4ecb6cefd5a64777a7}{m\+Frame}}\label{class_c_anim_channel_1_1_keyframe_ae946ed89ac4a6b4ecb6cefd5a64777a7}
+
+\begin{DoxyCompactList}\small\item\em The frame number for the keyframe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that represents a keyframe. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_anim_channel_1_1_keyframe_a123c8c5557957a1202d9987fce83b31e}{\index{C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}!Keyframe@{Keyframe}}
+\index{Keyframe@{Keyframe}!C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}}
+\subsubsection[{Keyframe}]{\setlength{\rightskip}{0pt plus 5cm}C\+Anim\+Channel\+::\+Keyframe\+::\+Keyframe (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Anim\+Channel} $\ast$}]{channel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_c_anim_channel_1_1_keyframe_a123c8c5557957a1202d9987fce83b31e}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel we are associated with \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_anim_channel_1_1_keyframe_ab772a5915170d21d88e9259dbed24191}{\index{C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}!Get\+Frame@{Get\+Frame}}
+\index{Get\+Frame@{Get\+Frame}!C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}}
+\subsubsection[{Get\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Anim\+Channel\+::\+Keyframe\+::\+Get\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_anim_channel_1_1_keyframe_ab772a5915170d21d88e9259dbed24191}
+
+
+Get the frame for this keyframe. 
+
+\begin{DoxyReturn}{Returns}
+The keyframe frame number 
+\end{DoxyReturn}
+\hypertarget{class_c_anim_channel_1_1_keyframe_a19e0ffcf6eab8a2c9eef7cd35f0ca8d7}{\index{C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}!Set\+Frame@{Set\+Frame}}
+\index{Set\+Frame@{Set\+Frame}!C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}}
+\subsubsection[{Set\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+::\+Keyframe\+::\+Set\+Frame (
+\begin{DoxyParamCaption}
+\item[{int}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_anim_channel_1_1_keyframe_a19e0ffcf6eab8a2c9eef7cd35f0ca8d7}
+
+
+Set the frame for this keyframe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The new frame number to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_anim_channel_1_1_keyframe_a2dbc0b264510a45b9a429f64aa2d8448}{\index{C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}!Xml\+Save@{Xml\+Save}}
+\index{Xml\+Save@{Xml\+Save}!C\+Anim\+Channel\+::\+Keyframe@{C\+Anim\+Channel\+::\+Keyframe}}
+\subsubsection[{Xml\+Save}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf xmlnode\+::\+C\+Xml\+Node} $>$ C\+Anim\+Channel\+::\+Keyframe\+::\+Xml\+Save (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf xmlnode\+::\+C\+Xml\+Node} $>$ \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_anim_channel_1_1_keyframe_a2dbc0b264510a45b9a429f64aa2d8448}
+
+
+Save this keyframe to an X\+M\+L node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we are going to be a child of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated X\+M\+L node 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_c_anim_channel_text_1_1_keyframe_text_a502cf5d31023f7d1272c4e1a85f94e31}{C\+Anim\+Channel\+Text\+::\+Keyframe\+Text}, and \hyperlink{class_c_anim_channel_point_1_1_keyframe_point_a531900a8e7e5e9d579d92364ff469844}{C\+Anim\+Channel\+Point\+::\+Keyframe\+Point}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_anim_channel_8h}{Anim\+Channel.\+h}\item 
+\hyperlink{_anim_channel_8cpp}{Anim\+Channel.\+cpp}\end{DoxyCompactItemize}

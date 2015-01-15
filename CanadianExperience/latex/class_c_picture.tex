@@ -1,0 +1,341 @@
+\hypertarget{class_c_picture}{\section{C\+Picture Class Reference}
+\label{class_c_picture}\index{C\+Picture@{C\+Picture}}
+}
+
+
+The picture we are drawing.  
+
+
+
+
+{\ttfamily \#include $<$Picture.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}
+\begin{DoxyCompactList}\small\item\em Iterator that iterates over the actors in a picture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_picture_a4e3783bef1f9d565b8a9f5e9680685ab}{\hyperlink{class_c_picture_a4e3783bef1f9d565b8a9f5e9680685ab}{C\+Picture} ()}\label{class_c_picture_a4e3783bef1f9d565b8a9f5e9680685ab}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_picture_a763d6f41025f8e3f39c3ed264aac623c}{virtual \hyperlink{class_c_picture_a763d6f41025f8e3f39c3ed264aac623c}{$\sim$\+C\+Picture} ()}\label{class_c_picture_a763d6f41025f8e3f39c3ed264aac623c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_picture_aa74c697e3bcca50430acbfa582f7a928}{\hyperlink{class_c_picture_aa74c697e3bcca50430acbfa582f7a928}{C\+Picture} (const \hyperlink{class_c_picture}{C\+Picture} \&)=delete}\label{class_c_picture_aa74c697e3bcca50430acbfa582f7a928}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor (Disabled) \end{DoxyCompactList}\item 
+\hypertarget{class_c_picture_a8b0fe5e8e17f415d010eedab79555b6e}{\hyperlink{class_c_picture}{C\+Picture} \& \hyperlink{class_c_picture_a8b0fe5e8e17f415d010eedab79555b6e}{operator=} (const \hyperlink{class_c_picture}{C\+Picture} \&)=delete}\label{class_c_picture_a8b0fe5e8e17f415d010eedab79555b6e}
+
+\begin{DoxyCompactList}\small\item\em Assignment Operator (Disabled) \end{DoxyCompactList}\item 
+Gdiplus\+::\+Size \hyperlink{class_c_picture_af2677c395a3cb8d6e7d0860839801e5b}{Get\+Size} ()
+\begin{DoxyCompactList}\small\item\em The picture size. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_a070bb83f16f8e20bedc06ca36b445e0f}{Set\+Play} (bool b)
+\begin{DoxyCompactList}\small\item\em Set the picture is playing or not. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_a66b8de27d3435e19024307254e918e3a}{Set\+Size} (Gdiplus\+::\+Size size)
+\begin{DoxyCompactList}\small\item\em The picture size. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_a6be8632e9b1c468dcf27e8452baf5605}{Add\+Observer} (\hyperlink{class_c_picture_observer}{C\+Picture\+Observer} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Add an observer to this picture. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_a548ad72979b2a11c2669d9896f32bf92}{Remove\+Observer} (\hyperlink{class_c_picture_observer}{C\+Picture\+Observer} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Remove an observer from this picture. \end{DoxyCompactList}\item 
+\hypertarget{class_c_picture_a971ca9c9100725b7d1a900adcfe889d6}{void \hyperlink{class_c_picture_a971ca9c9100725b7d1a900adcfe889d6}{Update\+Observers} ()}\label{class_c_picture_a971ca9c9100725b7d1a900adcfe889d6}
+
+\begin{DoxyCompactList}\small\item\em Update all observers to indicate the picture has changed. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_aca6a4829388fdfe3ecdc42f0e788b712}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Draw this picture on a device context. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_a90799f3ea10ffea8fbb0ea2b9d24a525}{Add\+Actor} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_actor}{C\+Actor} $>$ actor)
+\item 
+void \hyperlink{class_c_picture_aa2e0537582432bfafe5f755169bd6c3d}{Store\+Sparty} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_actor}{C\+Actor} $>$ actor)
+\begin{DoxyCompactList}\small\item\em Store the actor Sparty. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_a70c9f1cbbd26ad632161abab5d1e9411}{Sotre\+Harold} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_actor}{C\+Actor} $>$ actor)
+\begin{DoxyCompactList}\small\item\em Store the actor Harold. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_actor}{C\+Actor} $>$ \hyperlink{class_c_picture_a1da71eb028f389a204ade107153c07c2}{Get\+Sparty} ()
+\begin{DoxyCompactList}\small\item\em Get the actor Sparty. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_actor}{C\+Actor} $>$ \hyperlink{class_c_picture_a61b6093301d6b0b1c626b5669c1ba47a}{Get\+Harold} ()
+\begin{DoxyCompactList}\small\item\em Get the actor Harold. \end{DoxyCompactList}\item 
+\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter} \hyperlink{class_c_picture_a8461cc11cc1ce334b4cf92e2ee4a4ebe}{begin} ()
+\begin{DoxyCompactList}\small\item\em Get an iterator for the beginning of the collection. \end{DoxyCompactList}\item 
+\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter} \hyperlink{class_c_picture_a63840c7eff74388a204c750908a23933}{end} ()
+\begin{DoxyCompactList}\small\item\em Get an iterator for the end of the collection. \end{DoxyCompactList}\item 
+\hyperlink{class_c_timeline}{C\+Timeline} $\ast$ \hyperlink{class_c_picture_a8ba1c7692b6a0ad3cf4984faf84a117a}{Get\+Timeline} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the Timeline object. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_picture_ad00510c4a90a9b84a80a3850cc6dcf3d}{Set\+Animation\+Time} (double time)
+\begin{DoxyCompactList}\small\item\em Set the current animation time. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_picture_a0b70778e0cc185cb0b58bf18cbc49988}{Get\+Animation\+Time} ()
+\begin{DoxyCompactList}\small\item\em Get the current animation time. \end{DoxyCompactList}\item 
+\hyperlink{class_c_particle_system}{C\+Particle\+System} $\ast$ \hyperlink{class_c_picture_a816d386d0b99c080ad5ab6efe4879723}{Get\+Particle\+System} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to the Particle\+System. \end{DoxyCompactList}\item 
+\hypertarget{class_c_picture_ab16f2951ffac06d345af0fa4e9561d53}{void \hyperlink{class_c_picture_ab16f2951ffac06d345af0fa4e9561d53}{Set\+Width} ()}\label{class_c_picture_ab16f2951ffac06d345af0fa4e9561d53}
+
+\begin{DoxyCompactList}\small\item\em Set the width of the snow. \end{DoxyCompactList}\item 
+\hypertarget{class_c_picture_ab586b160fca8c10ab57b18ea704bfb2d}{void \hyperlink{class_c_picture_ab586b160fca8c10ab57b18ea704bfb2d}{Set\+Height} ()}\label{class_c_picture_ab586b160fca8c10ab57b18ea704bfb2d}
+
+\begin{DoxyCompactList}\small\item\em Set the height of the snow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The picture we are drawing. 
+
+There will be one picture object that contains all of our actors, which then contains the drawables. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_picture_a90799f3ea10ffea8fbb0ea2b9d24a525}{\index{C\+Picture@{C\+Picture}!Add\+Actor@{Add\+Actor}}
+\index{Add\+Actor@{Add\+Actor}!C\+Picture@{C\+Picture}}
+\subsubsection[{Add\+Actor}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Add\+Actor (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf C\+Actor} $>$}]{actor}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_a90799f3ea10ffea8fbb0ea2b9d24a525}
+Add an actor to this picture. 
+\begin{DoxyParams}{Parameters}
+{\em actor} & The actor to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_a6be8632e9b1c468dcf27e8452baf5605}{\index{C\+Picture@{C\+Picture}!Add\+Observer@{Add\+Observer}}
+\index{Add\+Observer@{Add\+Observer}!C\+Picture@{C\+Picture}}
+\subsubsection[{Add\+Observer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Add\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Picture\+Observer} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_a6be8632e9b1c468dcf27e8452baf5605}
+
+
+Add an observer to this picture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_a8461cc11cc1ce334b4cf92e2ee4a4ebe}{\index{C\+Picture@{C\+Picture}!begin@{begin}}
+\index{begin@{begin}!C\+Picture@{C\+Picture}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor\+Iter} C\+Picture\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a8461cc11cc1ce334b4cf92e2ee4a4ebe}
+
+
+Get an iterator for the beginning of the collection. 
+
+\begin{DoxyReturn}{Returns}
+Iter object at position 0 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_aca6a4829388fdfe3ecdc42f0e788b712}{\index{C\+Picture@{C\+Picture}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Picture@{C\+Picture}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_aca6a4829388fdfe3ecdc42f0e788b712}
+
+
+Draw this picture on a device context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The device context to draw on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_a63840c7eff74388a204c750908a23933}{\index{C\+Picture@{C\+Picture}!end@{end}}
+\index{end@{end}!C\+Picture@{C\+Picture}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor\+Iter} C\+Picture\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a63840c7eff74388a204c750908a23933}
+
+
+Get an iterator for the end of the collection. 
+
+\begin{DoxyReturn}{Returns}
+Iter object at position past the end 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_a0b70778e0cc185cb0b58bf18cbc49988}{\index{C\+Picture@{C\+Picture}!Get\+Animation\+Time@{Get\+Animation\+Time}}
+\index{Get\+Animation\+Time@{Get\+Animation\+Time}!C\+Picture@{C\+Picture}}
+\subsubsection[{Get\+Animation\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Picture\+::\+Get\+Animation\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_a0b70778e0cc185cb0b58bf18cbc49988}
+
+
+Get the current animation time. 
+
+\begin{DoxyReturn}{Returns}
+The current animation time 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_a61b6093301d6b0b1c626b5669c1ba47a}{\index{C\+Picture@{C\+Picture}!Get\+Harold@{Get\+Harold}}
+\index{Get\+Harold@{Get\+Harold}!C\+Picture@{C\+Picture}}
+\subsubsection[{Get\+Harold}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Actor}$>$ C\+Picture\+::\+Get\+Harold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a61b6093301d6b0b1c626b5669c1ba47a}
+
+
+Get the actor Harold. 
+
+\begin{DoxyReturn}{Returns}
+actor harold 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_a816d386d0b99c080ad5ab6efe4879723}{\index{C\+Picture@{C\+Picture}!Get\+Particle\+System@{Get\+Particle\+System}}
+\index{Get\+Particle\+System@{Get\+Particle\+System}!C\+Picture@{C\+Picture}}
+\subsubsection[{Get\+Particle\+System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Particle\+System}$\ast$ C\+Picture\+::\+Get\+Particle\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a816d386d0b99c080ad5ab6efe4879723}
+
+
+Get a pointer to the Particle\+System. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the Particle\+System Object 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_af2677c395a3cb8d6e7d0860839801e5b}{\index{C\+Picture@{C\+Picture}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!C\+Picture@{C\+Picture}}
+\subsubsection[{Get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Size C\+Picture\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_af2677c395a3cb8d6e7d0860839801e5b}
+
+
+The picture size. 
+
+\begin{DoxyReturn}{Returns}
+Size 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_a1da71eb028f389a204ade107153c07c2}{\index{C\+Picture@{C\+Picture}!Get\+Sparty@{Get\+Sparty}}
+\index{Get\+Sparty@{Get\+Sparty}!C\+Picture@{C\+Picture}}
+\subsubsection[{Get\+Sparty}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Actor}$>$ C\+Picture\+::\+Get\+Sparty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a1da71eb028f389a204ade107153c07c2}
+
+
+Get the actor Sparty. 
+
+\begin{DoxyReturn}{Returns}
+actor sparty 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_a8ba1c7692b6a0ad3cf4984faf84a117a}{\index{C\+Picture@{C\+Picture}!Get\+Timeline@{Get\+Timeline}}
+\index{Get\+Timeline@{Get\+Timeline}!C\+Picture@{C\+Picture}}
+\subsubsection[{Get\+Timeline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Timeline}$\ast$ C\+Picture\+::\+Get\+Timeline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a8ba1c7692b6a0ad3cf4984faf84a117a}
+
+
+Get a pointer to the Timeline object. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the Timeline object 
+\end{DoxyReturn}
+\hypertarget{class_c_picture_a548ad72979b2a11c2669d9896f32bf92}{\index{C\+Picture@{C\+Picture}!Remove\+Observer@{Remove\+Observer}}
+\index{Remove\+Observer@{Remove\+Observer}!C\+Picture@{C\+Picture}}
+\subsubsection[{Remove\+Observer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Remove\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Picture\+Observer} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_a548ad72979b2a11c2669d9896f32bf92}
+
+
+Remove an observer from this picture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to remove \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_ad00510c4a90a9b84a80a3850cc6dcf3d}{\index{C\+Picture@{C\+Picture}!Set\+Animation\+Time@{Set\+Animation\+Time}}
+\index{Set\+Animation\+Time@{Set\+Animation\+Time}!C\+Picture@{C\+Picture}}
+\subsubsection[{Set\+Animation\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Set\+Animation\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_ad00510c4a90a9b84a80a3850cc6dcf3d}
+
+
+Set the current animation time. 
+
+This forces the animation of all objects to the current animation location. 
+\begin{DoxyParams}{Parameters}
+{\em time} & The new time. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_a070bb83f16f8e20bedc06ca36b445e0f}{\index{C\+Picture@{C\+Picture}!Set\+Play@{Set\+Play}}
+\index{Set\+Play@{Set\+Play}!C\+Picture@{C\+Picture}}
+\subsubsection[{Set\+Play}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Set\+Play (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a070bb83f16f8e20bedc06ca36b445e0f}
+
+
+Set the picture is playing or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The boolean to tell if it is playing \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_a66b8de27d3435e19024307254e918e3a}{\index{C\+Picture@{C\+Picture}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!C\+Picture@{C\+Picture}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Size}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_picture_a66b8de27d3435e19024307254e918e3a}
+
+
+The picture size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The new picture size \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_a70c9f1cbbd26ad632161abab5d1e9411}{\index{C\+Picture@{C\+Picture}!Sotre\+Harold@{Sotre\+Harold}}
+\index{Sotre\+Harold@{Sotre\+Harold}!C\+Picture@{C\+Picture}}
+\subsubsection[{Sotre\+Harold}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Sotre\+Harold (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf C\+Actor} $>$}]{actor}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_a70c9f1cbbd26ad632161abab5d1e9411}
+
+
+Store the actor Harold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor} & the actor Harold \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_picture_aa2e0537582432bfafe5f755169bd6c3d}{\index{C\+Picture@{C\+Picture}!Store\+Sparty@{Store\+Sparty}}
+\index{Store\+Sparty@{Store\+Sparty}!C\+Picture@{C\+Picture}}
+\subsubsection[{Store\+Sparty}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Picture\+::\+Store\+Sparty (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf C\+Actor} $>$}]{actor}
+\end{DoxyParamCaption}
+)}}\label{class_c_picture_aa2e0537582432bfafe5f755169bd6c3d}
+
+
+Store the actor Sparty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor} & the actor sparty \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_picture_8h}{Picture.\+h}\item 
+\hyperlink{_picture_8cpp}{Picture.\+cpp}\end{DoxyCompactItemize}

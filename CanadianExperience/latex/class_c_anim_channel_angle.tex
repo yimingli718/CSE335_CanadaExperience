@@ -1,0 +1,125 @@
+\hypertarget{class_c_anim_channel_angle}{\section{C\+Anim\+Channel\+Angle Class Reference}
+\label{class_c_anim_channel_angle}\index{C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}}
+}
+
+
+Animation channel for angles.  
+
+
+
+
+{\ttfamily \#include $<$Anim\+Channel\+Angle.\+h$>$}
+
+Inheritance diagram for C\+Anim\+Channel\+Angle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_anim_channel_angle}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_anim_channel_angle_1_1_keyframe_angle}{Keyframe\+Angle}
+\begin{DoxyCompactList}\small\item\em A keyframe for an angle channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_anim_channel_angle_a408925f5093ef5bca8bcebc2917fe577}{\hyperlink{class_c_anim_channel_angle_a408925f5093ef5bca8bcebc2917fe577}{C\+Anim\+Channel\+Angle} ()}\label{class_c_anim_channel_angle_a408925f5093ef5bca8bcebc2917fe577}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_anim_channel_angle_aa6fd09295d3868da87a06b4173fdc955}{virtual \hyperlink{class_c_anim_channel_angle_aa6fd09295d3868da87a06b4173fdc955}{$\sim$\+C\+Anim\+Channel\+Angle} ()}\label{class_c_anim_channel_angle_aa6fd09295d3868da87a06b4173fdc955}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_anim_channel_angle_a0fda0dabc9e7d7a44760b75aab85abf4}{Get\+Angle} ()
+\begin{DoxyCompactList}\small\item\em Get the current time angle. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_anim_channel_angle_a20bb427cc1a790d1449f770ac413dc95}{Set\+Keyframe} (double angle)
+\begin{DoxyCompactList}\small\item\em Set a keyframe. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_anim_channel_angle_a2fe6ecc9f2cc1629efa18c33d2742e4d}{Tween} (double t)
+\begin{DoxyCompactList}\small\item\em Tween between two angle keyframes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_anim_channel_angle_a7c56ed07ead2eab289e07dbd39c1bf90}{Xml\+Load\+Keyframe} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node} $>$ \&node) override
+\begin{DoxyCompactList}\small\item\em Handle loading this channel's keyframe type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Animation channel for angles. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_anim_channel_angle_a0fda0dabc9e7d7a44760b75aab85abf4}{\index{C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}!Get\+Angle@{Get\+Angle}}
+\index{Get\+Angle@{Get\+Angle}!C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}}
+\subsubsection[{Get\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Anim\+Channel\+Angle\+::\+Get\+Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_anim_channel_angle_a0fda0dabc9e7d7a44760b75aab85abf4}
+
+
+Get the current time angle. 
+
+\begin{DoxyReturn}{Returns}
+Angle in radians 
+\end{DoxyReturn}
+\hypertarget{class_c_anim_channel_angle_a20bb427cc1a790d1449f770ac413dc95}{\index{C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}!Set\+Keyframe@{Set\+Keyframe}}
+\index{Set\+Keyframe@{Set\+Keyframe}!C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}}
+\subsubsection[{Set\+Keyframe}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+Angle\+::\+Set\+Keyframe (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_c_anim_channel_angle_a20bb427cc1a790d1449f770ac413dc95}
+
+
+Set a keyframe. 
+
+This function allocates a new keyframe and sends it to \hyperlink{class_c_anim_channel}{C\+Anim\+Channel}, which will insert it into the collection of keyframes. 
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle for the keyframe. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_anim_channel_angle_a2fe6ecc9f2cc1629efa18c33d2742e4d}{\index{C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}!Tween@{Tween}}
+\index{Tween@{Tween}!C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}}
+\subsubsection[{Tween}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+Angle\+::\+Tween (
+\begin{DoxyParamCaption}
+\item[{double}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_anim_channel_angle_a2fe6ecc9f2cc1629efa18c33d2742e4d}
+
+
+Tween between two angle keyframes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The t value between the frames \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_anim_channel_adf83febfff4c3db9e9f56de72735f8ee}{C\+Anim\+Channel}.
+
+\hypertarget{class_c_anim_channel_angle_a7c56ed07ead2eab289e07dbd39c1bf90}{\index{C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}!Xml\+Load\+Keyframe@{Xml\+Load\+Keyframe}}
+\index{Xml\+Load\+Keyframe@{Xml\+Load\+Keyframe}!C\+Anim\+Channel\+Angle@{C\+Anim\+Channel\+Angle}}
+\subsubsection[{Xml\+Load\+Keyframe}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Anim\+Channel\+Angle\+::\+Xml\+Load\+Keyframe (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf xmlnode\+::\+C\+Xml\+Node} $>$ \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_anim_channel_angle_a7c56ed07ead2eab289e07dbd39c1bf90}
+
+
+Handle loading this channel's keyframe type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & keyframe tag node \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_anim_channel_a2df7b3fed2b3faf34c585446628fc874}{C\+Anim\+Channel}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_anim_channel_angle_8h}{Anim\+Channel\+Angle.\+h}\item 
+\hyperlink{_anim_channel_angle_8cpp}{Anim\+Channel\+Angle.\+cpp}\end{DoxyCompactItemize}

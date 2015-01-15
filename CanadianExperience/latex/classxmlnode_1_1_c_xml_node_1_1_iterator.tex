@@ -1,0 +1,88 @@
+\hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator}{\section{xmlnode\+:\+:C\+Xml\+Node\+:\+:Iterator Class Reference}
+\label{classxmlnode_1_1_c_xml_node_1_1_iterator}\index{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}}
+}
+
+
+Support for iterating over the children of a node.  
+
+
+
+
+{\ttfamily \#include $<$Xml\+Node.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator_a9907b45ce49352e0d5ffafa7f2c4a520}{operator!=} (const \hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator} \&other) const 
+\begin{DoxyCompactList}\small\item\em Test to see if two iterator are at the same location. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} $>$ \hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator_a6d255a513c60c7de55a01c5eb626bf6d}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Operation $\ast$ for the iterator. \end{DoxyCompactList}\item 
+const \hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator} \& \hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator_aefa7392f7c198dcf907d8458fbf0db1a}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Advance to the next item in the collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_a770307dc9d4e2e7005bcf200bae3066a}{class {\bfseries C\+Xml\+Node}}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_a770307dc9d4e2e7005bcf200bae3066a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Support for iterating over the children of a node. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_a9907b45ce49352e0d5ffafa7f2c4a520}{\index{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool xmlnode\+::\+C\+Xml\+Node\+::\+Iterator\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Iterator} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_a9907b45ce49352e0d5ffafa7f2c4a520}
+
+
+Test to see if two iterator are at the same location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other object we are testing against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are equal. 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_a6d255a513c60c7de55a01c5eb626bf6d}{\index{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Xml\+Node} $>$ C\+Xml\+Node\+::\+Iterator\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_a6d255a513c60c7de55a01c5eb626bf6d}
+
+
+Operation $\ast$ for the iterator. 
+
+Indiates the child that is the current iterator reference.
+
+\begin{DoxyReturn}{Returns}
+Pointer to child node. 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_aefa7392f7c198dcf907d8458fbf0db1a}{\index{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!xmlnode\+::\+C\+Xml\+Node\+::\+Iterator@{xmlnode\+::\+C\+Xml\+Node\+::\+Iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Iterator}\& xmlnode\+::\+C\+Xml\+Node\+::\+Iterator\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_aefa7392f7c198dcf907d8458fbf0db1a}
+
+
+Advance to the next item in the collection. 
+
+\begin{DoxyReturn}{Returns}
+Reference to this iterator. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_xml_node_8h}{Xml\+Node.\+h}\item 
+\hyperlink{_xml_node_8cpp}{Xml\+Node.\+cpp}\end{DoxyCompactItemize}

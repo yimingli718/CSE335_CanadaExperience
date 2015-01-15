@@ -1,0 +1,102 @@
+\hypertarget{class_c_linked_list}{\section{C\+Linked\+List Class Reference}
+\label{class_c_linked_list}\index{C\+Linked\+List@{C\+Linked\+List}}
+}
+
+
+The linked calss to store the snow flakes.  
+
+
+
+
+{\ttfamily \#include $<$Linked\+List.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_linked_list_a1acc364e288b1fd8deef87405d55eb8b}{\hyperlink{class_c_linked_list_a1acc364e288b1fd8deef87405d55eb8b}{C\+Linked\+List} ()}\label{class_c_linked_list_a1acc364e288b1fd8deef87405d55eb8b}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_linked_list_a485e9d04a818f41bc49b8190c7eab5ab}{\hyperlink{class_c_linked_list_a485e9d04a818f41bc49b8190c7eab5ab}{$\sim$\+C\+Linked\+List} ()}\label{class_c_linked_list_a485e9d04a818f41bc49b8190c7eab5ab}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_linked_list_a99ab91eab972887ff91d11cc23550391}{Insert} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ flake)
+\begin{DoxyCompactList}\small\item\em Insert a snowfalke to the tail of linked list. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ \hyperlink{class_c_linked_list_af26de4eaa8a0c7df65be6a458e6224c9}{Popfront} ()
+\begin{DoxyCompactList}\small\item\em Popfront the first snowflake in the list and return it. \end{DoxyCompactList}\item 
+\hypertarget{class_c_linked_list_a715d68d55b85aa65f7ca0ad2e1970776}{void \hyperlink{class_c_linked_list_a715d68d55b85aa65f7ca0ad2e1970776}{Remove} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ temp)}\label{class_c_linked_list_a715d68d55b85aa65f7ca0ad2e1970776}
+
+\begin{DoxyCompactList}\small\item\em Remove a certain point from the linked list. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ \hyperlink{class_c_linked_list_a56b88a4740720062da3d9dd0389bbc1d}{Get\+Head} ()
+\begin{DoxyCompactList}\small\item\em Get the head of the linked list. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_c_snowflake}{C\+Snowflake} $>$ \hyperlink{class_c_linked_list_a14ae4d2fe8f2d8eab0fdf9a8831b2063}{Get\+Tail} ()
+\begin{DoxyCompactList}\small\item\em Get the tail of the linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The linked calss to store the snow flakes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_linked_list_a56b88a4740720062da3d9dd0389bbc1d}{\index{C\+Linked\+List@{C\+Linked\+List}!Get\+Head@{Get\+Head}}
+\index{Get\+Head@{Get\+Head}!C\+Linked\+List@{C\+Linked\+List}}
+\subsubsection[{Get\+Head}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Snowflake}$>$ C\+Linked\+List\+::\+Get\+Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_linked_list_a56b88a4740720062da3d9dd0389bbc1d}
+
+
+Get the head of the linked list. 
+
+\begin{DoxyReturn}{Returns}
+the header pointer 
+\end{DoxyReturn}
+\hypertarget{class_c_linked_list_a14ae4d2fe8f2d8eab0fdf9a8831b2063}{\index{C\+Linked\+List@{C\+Linked\+List}!Get\+Tail@{Get\+Tail}}
+\index{Get\+Tail@{Get\+Tail}!C\+Linked\+List@{C\+Linked\+List}}
+\subsubsection[{Get\+Tail}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf C\+Snowflake}$>$ C\+Linked\+List\+::\+Get\+Tail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_linked_list_a14ae4d2fe8f2d8eab0fdf9a8831b2063}
+
+
+Get the tail of the linked list. 
+
+\begin{DoxyReturn}{Returns}
+the tail pointer 
+\end{DoxyReturn}
+\hypertarget{class_c_linked_list_a99ab91eab972887ff91d11cc23550391}{\index{C\+Linked\+List@{C\+Linked\+List}!Insert@{Insert}}
+\index{Insert@{Insert}!C\+Linked\+List@{C\+Linked\+List}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Linked\+List\+::\+Insert (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf C\+Snowflake} $>$}]{flake}
+\end{DoxyParamCaption}
+)}}\label{class_c_linked_list_a99ab91eab972887ff91d11cc23550391}
+
+
+Insert a snowfalke to the tail of linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flake} & the Snowflake to insert to the end \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_linked_list_af26de4eaa8a0c7df65be6a458e6224c9}{\index{C\+Linked\+List@{C\+Linked\+List}!Popfront@{Popfront}}
+\index{Popfront@{Popfront}!C\+Linked\+List@{C\+Linked\+List}}
+\subsubsection[{Popfront}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Snowflake} $>$ C\+Linked\+List\+::\+Popfront (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_linked_list_af26de4eaa8a0c7df65be6a458e6224c9}
+
+
+Popfront the first snowflake in the list and return it. 
+
+\begin{DoxyReturn}{Returns}
+the snowfleak pop out 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_linked_list_8h}{Linked\+List.\+h}\item 
+\hyperlink{_linked_list_8cpp}{Linked\+List.\+cpp}\end{DoxyCompactItemize}

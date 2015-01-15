@@ -1,0 +1,560 @@
+\hypertarget{classxmlnode_1_1_c_xml_node}{\section{xmlnode\+:\+:C\+Xml\+Node Class Reference}
+\label{classxmlnode_1_1_c_xml_node}\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+}
+
+
+A wrapper for msxml nodes.  
+
+
+
+
+{\ttfamily \#include $<$Xml\+Node.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxmlnode_1_1_c_xml_node_1_1_children}{Children}
+\begin{DoxyCompactList}\small\item\em Representation of children to support iteration. \end{DoxyCompactList}\item 
+class \hyperlink{classxmlnode_1_1_c_xml_node_1_1_exception}{Exception}
+\begin{DoxyCompactList}\small\item\em Exceptions for \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node}. \end{DoxyCompactList}\item 
+class \hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator}
+\begin{DoxyCompactList}\small\item\em Support for iterating over the children of a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxmlnode_1_1_c_xml_node_a0f05b63e034bb5620609a2020c591d55}{C\+Xml\+Node} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classxmlnode_1_1_c_xml_node_ad3e072fa0d46c534c08f013405e051ae}{virtual \hyperlink{classxmlnode_1_1_c_xml_node_ad3e072fa0d46c534c08f013405e051ae}{$\sim$\+C\+Xml\+Node} ()}\label{classxmlnode_1_1_c_xml_node_ad3e072fa0d46c534c08f013405e051ae}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classxmlnode_1_1_c_xml_node_abfd7b791490e58aac7091b78e36bd24b}{Open} (const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Open a file as an X\+M\+L document. \end{DoxyCompactList}\item 
+void \hyperlink{classxmlnode_1_1_c_xml_node_a7f4a7dee5a7de490507b9d0ed78dbab7}{Create} (const std\+::wstring \&rootname)
+\begin{DoxyCompactList}\small\item\em Create an empty X\+M\+L document in this node. \end{DoxyCompactList}\item 
+void \hyperlink{classxmlnode_1_1_c_xml_node_a0f83eef381fe59726503e0fcb854661d}{Save} (const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Save X\+M\+L document to a file. \end{DoxyCompactList}\item 
+std\+::wstring \hyperlink{classxmlnode_1_1_c_xml_node_a700c3de386529eab05b185c38b17fd51}{Get\+X\+M\+L} ()
+\begin{DoxyCompactList}\small\item\em Obtain the created X\+M\+L as a string. \end{DoxyCompactList}\item 
+std\+::wstring \hyperlink{classxmlnode_1_1_c_xml_node_a90fbe5f25e67b82a0d3caf7bb5d46791}{Get\+Name} () const 
+\begin{DoxyCompactList}\small\item\em The node name. \end{DoxyCompactList}\item 
+D\+O\+M\+Node\+Type \hyperlink{classxmlnode_1_1_c_xml_node_a85b513f8617fb75a721c646b62be95ab}{Get\+Type} () const 
+\begin{DoxyCompactList}\small\item\em The node type. \end{DoxyCompactList}\item 
+std\+::wstring \hyperlink{classxmlnode_1_1_c_xml_node_a383ef3eb35e61fc6a5a8889ed67f2a33}{Get\+Value} () const 
+\begin{DoxyCompactList}\small\item\em Get the node value. \end{DoxyCompactList}\item 
+int \hyperlink{classxmlnode_1_1_c_xml_node_a9eacb7b529d5690449fc0981b679edac}{Get\+Int\+Value} () const 
+\begin{DoxyCompactList}\small\item\em Get the node value. \end{DoxyCompactList}\item 
+double \hyperlink{classxmlnode_1_1_c_xml_node_a1ab9947b3e2f3aba9b6f044779b7e25b}{Get\+Double\+Value} () const 
+\begin{DoxyCompactList}\small\item\em Get the node value. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} $>$ \hyperlink{classxmlnode_1_1_c_xml_node_aa571e6a48132a260420a077dde31168f}{Get\+Attribute} (const std\+::wstring \&name)
+\begin{DoxyCompactList}\small\item\em Get an attribute. \end{DoxyCompactList}\item 
+std\+::wstring \hyperlink{classxmlnode_1_1_c_xml_node_ac4b635b102a0ba6c0f64d047fd27f2a1}{Get\+Attribute\+Value} (const std\+::wstring \&name, const std\+::wstring \&def)
+\begin{DoxyCompactList}\small\item\em Get the value of an attribute. \end{DoxyCompactList}\item 
+int \hyperlink{classxmlnode_1_1_c_xml_node_a870618bd8862b8f3834613f469e56d25}{Get\+Attribute\+Int\+Value} (const std\+::wstring \&name, int def)
+\begin{DoxyCompactList}\small\item\em Get the value of an attribute. \end{DoxyCompactList}\item 
+double \hyperlink{classxmlnode_1_1_c_xml_node_a69fcfbe75f19450db6fe72908ce7c52e}{Get\+Attribute\+Double\+Value} (const std\+::wstring \&name, double def)
+\begin{DoxyCompactList}\small\item\em Get the value of an attribute. \end{DoxyCompactList}\item 
+void \hyperlink{classxmlnode_1_1_c_xml_node_ac2543c8908d29642f70c9ce437475bf1}{Set\+Attribute} (const std\+::wstring \&name, const std\+::wstring \&val)
+\begin{DoxyCompactList}\small\item\em Set an attribute on this node. \end{DoxyCompactList}\item 
+void \hyperlink{classxmlnode_1_1_c_xml_node_a6771d1de541ffefcf8a4fcd809b12b62}{Set\+Attribute} (const std\+::wstring \&name, int val)
+\begin{DoxyCompactList}\small\item\em Set an attribute on this node. \end{DoxyCompactList}\item 
+void \hyperlink{classxmlnode_1_1_c_xml_node_a1bfd97eb8de5e6f769b5ed29039b91ea}{Set\+Attribute} (const std\+::wstring \&name, double val)
+\begin{DoxyCompactList}\small\item\em Set an attribute on this node. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} $>$ \hyperlink{classxmlnode_1_1_c_xml_node_ac5700bda1faebcbe5bb042e043ea60be}{Get\+Child} (int n)
+\begin{DoxyCompactList}\small\item\em Get a child node of this node by index. \end{DoxyCompactList}\item 
+\hyperlink{classxmlnode_1_1_c_xml_node_1_1_children}{Children} \hyperlink{classxmlnode_1_1_c_xml_node_a03f86570ca40d4cc09c3e1841939a9d0}{Get\+Children} ()
+\begin{DoxyCompactList}\small\item\em Get the children of this node. \end{DoxyCompactList}\item 
+int \hyperlink{classxmlnode_1_1_c_xml_node_ab455bd55e7f3dbd550e81d7fe293d146}{Get\+Num\+Children} ()
+\begin{DoxyCompactList}\small\item\em Number of children of this node. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} $>$ \hyperlink{classxmlnode_1_1_c_xml_node_a7227a654358ffb87a2a57c165dee509c}{Add\+Child} (const std\+::wstring \&name)
+\begin{DoxyCompactList}\small\item\em Add a child node to this node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} $>$ \hyperlink{classxmlnode_1_1_c_xml_node_ad71ff87937ae943a9c11f5891d53d93b}{Open\+Document} (const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Open an X\+M\+L document and return the document root node. \end{DoxyCompactList}\item 
+static std\+::shared\+\_\+ptr$<$ \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} $>$ \hyperlink{classxmlnode_1_1_c_xml_node_ae50a4482c4ea73492001f91788945bb1}{Create\+Document} (const std\+::wstring \&rootname)
+\begin{DoxyCompactList}\small\item\em Create an empty X\+M\+L document and return the document root node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A wrapper for msxml nodes. 
+
+M\+S\+X\+M\+L was designed to be used by a variety of languages, including C++, C\#, and Visual Basic. Consequently, it is a compromise that is very cumbersome to use. This class is designed to simplify the process considerably.
+
+All an X\+M\+L document is a tree of nodes. This class represents nodes in that tree and the root node represents that underlying document. This class can be used to both create and load X\+M\+L documents.
+
+\begin{DoxyVersion}{Version}
+1.\+01 07-\/16-\/2014 Initial development 
+
+1.\+02 07-\/17-\/2014 Namespace, added Get\+X\+M\+L, added tests 
+
+1.\+03 07-\/17-\/2014 Exceptions 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classxmlnode_1_1_c_xml_node_a0f05b63e034bb5620609a2020c591d55}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!C\+Xml\+Node@{C\+Xml\+Node}}
+\index{C\+Xml\+Node@{C\+Xml\+Node}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{C\+Xml\+Node}]{\setlength{\rightskip}{0pt plus 5cm}C\+Xml\+Node\+::\+C\+Xml\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a0f05b63e034bb5620609a2020c591d55}
+
+
+Constructor. 
+
+Creates an empty \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} with no attached X\+M\+L document. You can then call either Open or Create on the node. However, the preferred method is to use the static member functions Open\+Document and Create\+Document. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classxmlnode_1_1_c_xml_node_a7227a654358ffb87a2a57c165dee509c}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Add\+Child@{Add\+Child}}
+\index{Add\+Child@{Add\+Child}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Add\+Child}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Xml\+Node} $>$ C\+Xml\+Node\+::\+Add\+Child (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a7227a654358ffb87a2a57c165dee509c}
+
+
+Add a child node to this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the child node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} object for the child node. 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a7f4a7dee5a7de490507b9d0ed78dbab7}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Create@{Create}}
+\index{Create@{Create}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Xml\+Node\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{rootname}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a7f4a7dee5a7de490507b9d0ed78dbab7}
+
+
+Create an empty X\+M\+L document in this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rootname} & The name for the root node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classxmlnode_1_1_c_xml_node_ae50a4482c4ea73492001f91788945bb1}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Create\+Document@{Create\+Document}}
+\index{Create\+Document@{Create\+Document}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Create\+Document}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Xml\+Node} $>$ C\+Xml\+Node\+::\+Create\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{rootname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classxmlnode_1_1_c_xml_node_ae50a4482c4ea73492001f91788945bb1}
+
+
+Create an empty X\+M\+L document and return the document root node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rootname} & The name for the root node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Document root node 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_aa571e6a48132a260420a077dde31168f}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Attribute@{Get\+Attribute}}
+\index{Get\+Attribute@{Get\+Attribute}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Xml\+Node} $>$ C\+Xml\+Node\+::\+Get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_aa571e6a48132a260420a077dde31168f}
+
+
+Get an attribute. 
+
+This returns a \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} object that is the attribute. You an then use the Get\+Value function to get the value of the attribute.
+
+Calls to this function create a \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} object as a wrapper for the underlying attribute. Subsequent calls for the same attribute will return a different object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Attribute name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Attribute as a \hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node} object or null if attribute does not exist. 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a69fcfbe75f19450db6fe72908ce7c52e}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Attribute\+Double\+Value@{Get\+Attribute\+Double\+Value}}
+\index{Get\+Attribute\+Double\+Value@{Get\+Attribute\+Double\+Value}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Attribute\+Double\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Xml\+Node\+::\+Get\+Attribute\+Double\+Value (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{double}]{def}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a69fcfbe75f19450db6fe72908ce7c52e}
+
+
+Get the value of an attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the attribute \\
+\hline
+{\em def} & Default value to return if attribute does not exist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Attribute value as a double or the default if does not exist. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if no conversion could be performed \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & if the converted value would fall out of the range of the result type or if the underlying function \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classxmlnode_1_1_c_xml_node_a870618bd8862b8f3834613f469e56d25}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Attribute\+Int\+Value@{Get\+Attribute\+Int\+Value}}
+\index{Get\+Attribute\+Int\+Value@{Get\+Attribute\+Int\+Value}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Attribute\+Int\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Xml\+Node\+::\+Get\+Attribute\+Int\+Value (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{int}]{def}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a870618bd8862b8f3834613f469e56d25}
+
+
+Get the value of an attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the attribute \\
+\hline
+{\em def} & Default value to return if attribute does not exist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Attribute value as an int or the default if does not exist. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if no conversion could be performed \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & if the converted value would fall out of the range of the result type or if the underlying function \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classxmlnode_1_1_c_xml_node_ac4b635b102a0ba6c0f64d047fd27f2a1}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Attribute\+Value@{Get\+Attribute\+Value}}
+\index{Get\+Attribute\+Value@{Get\+Attribute\+Value}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Attribute\+Value}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Xml\+Node\+::\+Get\+Attribute\+Value (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{const std\+::wstring \&}]{def}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_ac4b635b102a0ba6c0f64d047fd27f2a1}
+
+
+Get the value of an attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the attribute \\
+\hline
+{\em def} & Default value to return if attribute does not exist. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Attribute value as a string or the default if does not exist. 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_ac5700bda1faebcbe5bb042e043ea60be}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Child@{Get\+Child}}
+\index{Get\+Child@{Get\+Child}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Child}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Xml\+Node} $>$ C\+Xml\+Node\+::\+Get\+Child (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_ac5700bda1faebcbe5bb042e043ea60be}
+
+
+Get a child node of this node by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index into the child nodes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The child node as a shared pointer 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a03f86570ca40d4cc09c3e1841939a9d0}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Children@{Get\+Children}}
+\index{Get\+Children@{Get\+Children}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Children}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Xml\+Node\+::\+Children} C\+Xml\+Node\+::\+Get\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a03f86570ca40d4cc09c3e1841939a9d0}
+
+
+Get the children of this node. 
+
+This allows the children to be iterated over easily using C++ 11 range for loops\+: 
+\begin{DoxyCode}
+\textcolor{keywordflow}{for}(\textcolor{keyword}{auto} child : node->GetChildren())
+\{
+    child->...
+\}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+\hyperlink{classxmlnode_1_1_c_xml_node_1_1_children}{C\+Xml\+Node\+::\+Children} object suitable to use as an iterator. 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a1ab9947b3e2f3aba9b6f044779b7e25b}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Double\+Value@{Get\+Double\+Value}}
+\index{Get\+Double\+Value@{Get\+Double\+Value}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Double\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Xml\+Node\+::\+Get\+Double\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classxmlnode_1_1_c_xml_node_a1ab9947b3e2f3aba9b6f044779b7e25b}
+
+
+Get the node value. 
+
+This is most useful for text and attributes. \begin{DoxyReturn}{Returns}
+The node value as a double 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if no conversion could be performed \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & if the converted value would fall out of the range of the result type or if the underlying function \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classxmlnode_1_1_c_xml_node_a9eacb7b529d5690449fc0981b679edac}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Int\+Value@{Get\+Int\+Value}}
+\index{Get\+Int\+Value@{Get\+Int\+Value}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Int\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Xml\+Node\+::\+Get\+Int\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classxmlnode_1_1_c_xml_node_a9eacb7b529d5690449fc0981b679edac}
+
+
+Get the node value. 
+
+This is most useful for text and attributes. \begin{DoxyReturn}{Returns}
+The node value as an integer 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if no conversion could be performed \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & if the converted value would fall out of the range of the result type or if the underlying function \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classxmlnode_1_1_c_xml_node_a90fbe5f25e67b82a0d3caf7bb5d46791}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Xml\+Node\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classxmlnode_1_1_c_xml_node_a90fbe5f25e67b82a0d3caf7bb5d46791}
+
+
+The node name. 
+
+\begin{DoxyReturn}{Returns}
+Node name 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_ab455bd55e7f3dbd550e81d7fe293d146}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Num\+Children@{Get\+Num\+Children}}
+\index{Get\+Num\+Children@{Get\+Num\+Children}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Num\+Children}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Xml\+Node\+::\+Get\+Num\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_ab455bd55e7f3dbd550e81d7fe293d146}
+
+
+Number of children of this node. 
+
+\begin{DoxyReturn}{Returns}
+Number of children 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a85b513f8617fb75a721c646b62be95ab}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}D\+O\+M\+Node\+Type C\+Xml\+Node\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classxmlnode_1_1_c_xml_node_a85b513f8617fb75a721c646b62be95ab}
+
+
+The node type. 
+
+The possible node types are\+:
+\begin{DoxyItemize}
+\item N\+O\+D\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D
+\item N\+O\+D\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T
+\item N\+O\+D\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E
+\item N\+O\+D\+E\+\_\+\+T\+E\+X\+T
+\item N\+O\+D\+E\+\_\+\+C\+D\+A\+T\+A\+\_\+\+S\+E\+C\+T\+I\+O\+N
+\item N\+O\+D\+E\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E
+\item N\+O\+D\+E\+\_\+\+E\+N\+T\+I\+T\+Y
+\item N\+O\+D\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N
+\item N\+O\+D\+E\+\_\+\+C\+O\+M\+M\+E\+N\+T
+\item N\+O\+D\+E\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T
+\item N\+O\+D\+E\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T\+\_\+\+T\+Y\+P\+E
+\item N\+O\+D\+E\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T
+\item N\+O\+D\+E\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N
+\end{DoxyItemize}
+
+The types that are usually important are\+:
+\begin{DoxyItemize}
+\item N\+O\+D\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T the X\+M\+L tags
+\item N\+O\+D\+E\+\_\+\+T\+E\+X\+T text between tags
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+The node type 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a383ef3eb35e61fc6a5a8889ed67f2a33}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+Value}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Xml\+Node\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classxmlnode_1_1_c_xml_node_a383ef3eb35e61fc6a5a8889ed67f2a33}
+
+
+Get the node value. 
+
+This is most useful for text and attributes. \begin{DoxyReturn}{Returns}
+The node value as a string 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a700c3de386529eab05b185c38b17fd51}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Get\+X\+M\+L@{Get\+X\+M\+L}}
+\index{Get\+X\+M\+L@{Get\+X\+M\+L}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Get\+X\+M\+L}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Xml\+Node\+::\+Get\+X\+M\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a700c3de386529eab05b185c38b17fd51}
+
+
+Obtain the created X\+M\+L as a string. 
+
+\begin{DoxyReturn}{Returns}
+String containing created X\+M\+L 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_abfd7b791490e58aac7091b78e36bd24b}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Open@{Open}}
+\index{Open@{Open}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Xml\+Node\+::\+Open (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_abfd7b791490e58aac7091b78e36bd24b}
+
+
+Open a file as an X\+M\+L document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Filename to open \\
+\hline
+\end{DoxyParams}
+\hypertarget{classxmlnode_1_1_c_xml_node_ad71ff87937ae943a9c11f5891d53d93b}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Open\+Document@{Open\+Document}}
+\index{Open\+Document@{Open\+Document}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Open\+Document}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf C\+Xml\+Node} $>$ C\+Xml\+Node\+::\+Open\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classxmlnode_1_1_c_xml_node_ad71ff87937ae943a9c11f5891d53d93b}
+
+
+Open an X\+M\+L document and return the document root node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Filename to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Document root node 
+\end{DoxyReturn}
+\hypertarget{classxmlnode_1_1_c_xml_node_a0f83eef381fe59726503e0fcb854661d}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Save@{Save}}
+\index{Save@{Save}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Xml\+Node\+::\+Save (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a0f83eef381fe59726503e0fcb854661d}
+
+
+Save X\+M\+L document to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to save to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classxmlnode_1_1_c_xml_node_1_1_exception}{C\+Xml\+Node\+::\+Exception}} & If there are errors in saving \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classxmlnode_1_1_c_xml_node_ac2543c8908d29642f70c9ce437475bf1}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Set\+Attribute@{Set\+Attribute}}
+\index{Set\+Attribute@{Set\+Attribute}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Set\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Xml\+Node\+::\+Set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{const std\+::wstring \&}]{val}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_ac2543c8908d29642f70c9ce437475bf1}
+
+
+Set an attribute on this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the attribute to set \\
+\hline
+{\em val} & Value to set as a string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classxmlnode_1_1_c_xml_node_a6771d1de541ffefcf8a4fcd809b12b62}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Set\+Attribute@{Set\+Attribute}}
+\index{Set\+Attribute@{Set\+Attribute}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Set\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Xml\+Node\+::\+Set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a6771d1de541ffefcf8a4fcd809b12b62}
+
+
+Set an attribute on this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the attribute to set \\
+\hline
+{\em val} & Value to set as an integer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classxmlnode_1_1_c_xml_node_a1bfd97eb8de5e6f769b5ed29039b91ea}{\index{xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}!Set\+Attribute@{Set\+Attribute}}
+\index{Set\+Attribute@{Set\+Attribute}!xmlnode\+::\+C\+Xml\+Node@{xmlnode\+::\+C\+Xml\+Node}}
+\subsubsection[{Set\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Xml\+Node\+::\+Set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}}\label{classxmlnode_1_1_c_xml_node_a1bfd97eb8de5e6f769b5ed29039b91ea}
+
+
+Set an attribute on this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the attribute to set \\
+\hline
+{\em val} & Value to set as a double \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_xml_node_8h}{Xml\+Node.\+h}\item 
+\hyperlink{_xml_node_8cpp}{Xml\+Node.\+cpp}\end{DoxyCompactItemize}

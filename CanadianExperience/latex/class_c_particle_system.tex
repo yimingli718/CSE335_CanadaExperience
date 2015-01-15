@@ -1,0 +1,84 @@
+\hypertarget{class_c_particle_system}{\section{C\+Particle\+System Class Reference}
+\label{class_c_particle_system}\index{C\+Particle\+System@{C\+Particle\+System}}
+}
+
+
+The Particle\+System to implement the snow draw and update.  
+
+
+
+
+{\ttfamily \#include $<$Particle\+System.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_particle_system_aeadc49bba6ac1391e8c0e8a2fa5b4f41}{\hyperlink{class_c_particle_system_aeadc49bba6ac1391e8c0e8a2fa5b4f41}{C\+Particle\+System} ()}\label{class_c_particle_system_aeadc49bba6ac1391e8c0e8a2fa5b4f41}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_particle_system_a1e46a5f93ae2f437e5d6b3c4b6305f80}{\hyperlink{class_c_particle_system_a1e46a5f93ae2f437e5d6b3c4b6305f80}{C\+Particle\+System} (const \hyperlink{class_c_particle_system}{C\+Particle\+System} \&)=delete}\label{class_c_particle_system_a1e46a5f93ae2f437e5d6b3c4b6305f80}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_particle_system_a60636bbc9ceff92f1a89b4d7412eccdf}{void \hyperlink{class_c_particle_system_a60636bbc9ceff92f1a89b4d7412eccdf}{operator=} (const \hyperlink{class_c_particle_system}{C\+Particle\+System} \&)=delete}\label{class_c_particle_system_a60636bbc9ceff92f1a89b4d7412eccdf}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_particle_system_aa73fea125a7e06b0cdfe622af9fdcb6b}{\hyperlink{class_c_particle_system_aa73fea125a7e06b0cdfe622af9fdcb6b}{$\sim$\+C\+Particle\+System} ()}\label{class_c_particle_system_aa73fea125a7e06b0cdfe622af9fdcb6b}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_particle_system_a88c6b477ef797e66bc3407b55763cbe1}{Draw} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Solid\+Brush $\ast$brush)
+\begin{DoxyCompactList}\small\item\em Draw the snowflakes in the linked list. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_particle_system_a5e7c19dbfea60bb422e98ae79aa56692}{Update} (double elapsed)
+\begin{DoxyCompactList}\small\item\em The update function to update each fleak in the linked list. \end{DoxyCompactList}\item 
+\hypertarget{class_c_particle_system_a1d402912cabfb3914f42ce3273e8b9e4}{void \hyperlink{class_c_particle_system_a1d402912cabfb3914f42ce3273e8b9e4}{Set\+Width} (int w)}\label{class_c_particle_system_a1d402912cabfb3914f42ce3273e8b9e4}
+
+\begin{DoxyCompactList}\small\item\em Set the width of the snow. \end{DoxyCompactList}\item 
+\hypertarget{class_c_particle_system_a6e91260e2897f0f44464ea6a1be7a093}{void \hyperlink{class_c_particle_system_a6e91260e2897f0f44464ea6a1be7a093}{Set\+Height} (int h)}\label{class_c_particle_system_a6e91260e2897f0f44464ea6a1be7a093}
+
+\begin{DoxyCompactList}\small\item\em Set the height of the snow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Particle\+System to implement the snow draw and update. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_particle_system_a88c6b477ef797e66bc3407b55763cbe1}{\index{C\+Particle\+System@{C\+Particle\+System}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Particle\+System@{C\+Particle\+System}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Particle\+System\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics, }
+\item[{Gdiplus\+::\+Solid\+Brush $\ast$}]{brush}
+\end{DoxyParamCaption}
+)}}\label{class_c_particle_system_a88c6b477ef797e66bc3407b55763cbe1}
+
+
+Draw the snowflakes in the linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The device context to draw on \\
+\hline
+{\em brush} & The color to draw with \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_particle_system_a5e7c19dbfea60bb422e98ae79aa56692}{\index{C\+Particle\+System@{C\+Particle\+System}!Update@{Update}}
+\index{Update@{Update}!C\+Particle\+System@{C\+Particle\+System}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Particle\+System\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{double}]{elapsed}
+\end{DoxyParamCaption}
+)}}\label{class_c_particle_system_a5e7c19dbfea60bb422e98ae79aa56692}
+
+
+The update function to update each fleak in the linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time between two updates \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_particle_system_8h}{Particle\+System.\+h}\item 
+\hyperlink{_particle_system_8cpp}{Particle\+System.\+cpp}\end{DoxyCompactItemize}
